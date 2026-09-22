@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Character Counter for a Textarea</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 59</h1><p>Live Character Counter for a Textarea</p></header>
+<main>
+  <div class="program-page">
+    <h1>Live Character Counter for a Textarea</h1>
+    <p class="description">Shows a live count of characters typed into a textarea.</p>
+    <div class="output-box">
+<textarea id="ta59" rows="3" maxlength="100" placeholder="Type here..."></textarea><div id="out59" class="output-line">0 / 100</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+ta59.addEventListener("input", ()=>{ out59.textContent = ta59.value.length + " / 100"; });
+</script>
+</body>
+</html>

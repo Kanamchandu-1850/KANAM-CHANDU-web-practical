@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Float and Clear</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .float-box { float:left; width:100px; height:80px; background:#93c5fd; margin-right:10px; border-radius:6px; }
+  .clearfix::after { content:""; display:block; clear:both; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 23</h1><p>float and clear Properties</p></header>
+<main>
+  <div class="program-page">
+    <h1>Float &amp; Clear</h1>
+    <p class="description">An image-like box floats left with text wrapping around it, and a clearfix resets the flow afterward.</p>
+    <div class="output-box">
+      <div class="clearfix">
+        <div class="float-box">Floated Box</div>
+        <p>This paragraph text wraps around the floated box on its right side, which is the classic use of float before flexbox/grid existed. The clearfix class below ensures the container doesn't collapse.</p>
+      </div>
+      <p>This paragraph appears cleanly below, unaffected by the float, thanks to the clearfix.</p>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

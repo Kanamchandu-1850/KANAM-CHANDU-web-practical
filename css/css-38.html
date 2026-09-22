@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive SaaS Navigation Menu</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .rnav { background:#1e293b; border-radius:10px; padding:14px 20px; }
+  .rnav-top { display:flex; justify-content:space-between; align-items:center; color:#fff; }
+  .rnav ul { list-style:none; display:flex; gap:18px; padding:0; margin:14px 0 0; }
+  .rnav a { color:#cbd5e1; text-decoration:none; }
+  @media (max-width: 600px) {
+    .rnav ul { flex-direction: column; gap:10px; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 38</h1><p>Responsive SaaS Navigation Menu</p></header>
+<main>
+  <div class="program-page">
+    <h1>Responsive Nav Menu</h1>
+    <p class="description">Links sit in a row on desktop and stack vertically once the screen narrows below 600px — resize the window to see it change.</p>
+    <div class="output-box">
+      <nav class="rnav">
+        <div class="rnav-top"><strong>Cloudify</strong></div>
+        <ul><li><a href="#">Home</a></li><li><a href="#">Features</a></li><li><a href="#">Pricing</a></li><li><a href="#">Contact</a></li></ul>
+      </nav>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

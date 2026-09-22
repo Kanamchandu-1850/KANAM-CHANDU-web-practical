@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drag and Drop Application</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 99</h1><p>Drag and Drop Application</p></header>
+<main>
+  <div class="program-page">
+    <h1>Drag and Drop Application</h1>
+    <p class="description">A simple drag-and-drop box using the native Drag and Drop API.</p>
+    <div class="output-box">
+<div id="drag99" draggable="true" style="width:100px; padding:14px; background:#6366f1; color:#fff; text-align:center; border-radius:6px;">Drag Me</div><div id="drop99" style="width:200px; height:80px; border:2px dashed #9ca3af; margin-top:10px; display:flex; align-items:center; justify-content:center;">Drop Here</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+drag99.addEventListener("dragstart", e=>{ e.dataTransfer.setData("text","dragged"); });
+drop99.addEventListener("dragover", e=>{ e.preventDefault(); });
+drop99.addEventListener("drop", e=>{ e.preventDefault(); drop99.textContent = "Dropped!"; drop99.style.background="#dcfce7"; });
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regular Expressions Demo</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 39</h1><p>Regular Expressions Demo</p></header>
+<main>
+  <div class="program-page">
+    <h1>Regular Expressions Demo</h1>
+    <p class="description">Uses a regex to extract all numbers from a string.</p>
+    <div class="output-box">
+<input id="s39" value="Order 12, Item 45, Qty 3"><button class="btn" onclick="run39()">Extract Numbers</button><div id="out39" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run39(){ const nums = s39.value.match(/\d+/g); out39.textContent = "Numbers found: " + (nums ? nums.join(", ") : "none"); }
+</script>
+</body>
+</html>

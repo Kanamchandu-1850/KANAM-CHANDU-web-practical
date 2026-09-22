@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a Tooltip Dynamically</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 69</h1><p>Create a Tooltip Dynamically</p></header>
+<main>
+  <div class="program-page">
+    <h1>Create a Tooltip Dynamically</h1>
+    <p class="description">Shows a tooltip element created and positioned by JavaScript on hover.</p>
+    <div class="output-box">
+<span id="hover69" style="border-bottom:1px dotted #6366f1; cursor:pointer;">Hover me</span>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+const el69 = document.getElementById("hover69");
+let tip69;
+el69.addEventListener("mouseenter", ()=>{
+  tip69 = document.createElement("div");
+  tip69.textContent = "Dynamically created tooltip!";
+  tip69.style.cssText = "position:absolute; background:#1f2937; color:#fff; padding:6px 10px; border-radius:6px; font-size:0.8rem; margin-top:24px;";
+  el69.appendChild(tip69);
+});
+el69.addEventListener("mouseleave", ()=>{ if(tip69) tip69.remove(); });
+</script>
+</body>
+</html>

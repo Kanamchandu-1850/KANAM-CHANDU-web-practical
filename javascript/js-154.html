@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store a Username Using localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 154</h1><p>Store a Username Using localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Store a Username Using localStorage</h1>
+    <p class="description">Saves a username string into localStorage.</p>
+    <div class="output-box">
+<input id="u154" placeholder="Username"><button class="btn" onclick="run154()">Save</button><div id="out154" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run154(){ localStorage.setItem("username", u154.value); out154.textContent="Saved!"; }
+</script>
+</body>
+</html>

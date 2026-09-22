@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inline, Internal &amp; External CSS</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  /* Internal CSS */
+  .internal-box { background:#fef3c7; padding:14px; border-radius:8px; border:2px solid #f59e0b; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 1</h1><p>Inline, Internal &amp; External CSS</p></header>
+<main>
+  <div class="program-page">
+    <h1>Three Ways to Apply CSS</h1>
+    <p class="description">Shows inline CSS (style attribute), internal CSS (style tag in head), and external CSS (this page's overall look comes from ../assets/style.css).</p>
+    <div class="output-box">
+      <p style="color:#dc2626; font-weight:bold;">This text is styled with INLINE CSS using the style attribute.</p>
+      <div class="internal-box">This box is styled with INTERNAL CSS defined in this page's &lt;style&gt; tag.</div>
+      <p>This whole page's fonts, header, and card look come from the EXTERNAL stylesheet <code>assets/style.css</code>.</p>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

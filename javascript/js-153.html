@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Info When Browser Goes Online/Offline</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 153</h1><p>Update Info When Browser Goes Online/Offline</p></header>
+<main>
+  <div class="program-page">
+    <h1>Update Info When Browser Goes Online/Offline</h1>
+    <p class="description">Listens for the browser's online/offline events and updates the page live.</p>
+    <div class="output-box">
+<div id="out153" class="output-line">Status: checking...</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function update153(){ out153.textContent = "Status: " + (navigator.onLine?"Online":"Offline"); }
+update153();
+window.addEventListener("online", update153);
+window.addEventListener("offline", update153);
+</script>
+</body>
+</html>

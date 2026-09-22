@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Shopping Cart</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 190</h1><p>Simple Shopping Cart</p></header>
+<main>
+  <div class="program-page">
+    <h1>Simple Shopping Cart</h1>
+    <p class="description">Add products with prices and see a running cart total.</p>
+    <div class="output-box">
+<input id="pname190" placeholder="Product"><input id="pprice190" type="number" placeholder="Price"><button class="btn" onclick="add190()">Add to Cart</button><ul id="list190"></ul><div id="total190" class="output-line">Total: 0</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let cart190=[];
+function add190(){ cart190.push({n:pname190.value, p:+pprice190.value}); render190(); pname190.value=""; pprice190.value=""; }
+function render190(){
+  list190.innerHTML = cart190.map(i=>`<li>${i.n} - $${i.p}</li>`).join("");
+  total190.textContent = "Total: $" + cart190.reduce((s,i)=>s+i.p,0);
+}
+</script>
+</body>
+</html>

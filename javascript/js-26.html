@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiplication Table</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 26</h1><p>Multiplication Table</p></header>
+<main>
+  <div class="program-page">
+    <h1>Multiplication Table</h1>
+    <p class="description">Generates the multiplication table of a given number.</p>
+    <div class="output-box">
+<input id="n26" type="number" value="7"><button class="btn" onclick="run26()">Generate</button><div id="out26" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run26(){
+  const n=+n26.value; let lines=[];
+  for(let i=1;i<=10;i++) lines.push(`${n} x ${i} = ${n*i}`);
+  out26.textContent = lines.join("\n");
+}
+</script>
+</body>
+</html>

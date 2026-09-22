@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sum of Digits</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 11</h1><p>Sum of Digits</p></header>
+<main>
+  <div class="program-page">
+    <h1>Sum of Digits</h1>
+    <p class="description">Adds up all digits of a number.</p>
+    <div class="output-box">
+<input id="n11" type="number" value="4567"><button class="btn" onclick="run11()">Calculate</button><div id="out11" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run11(){ const sum=n11.value.split("").reduce((a,d)=>a+Number(d),0); out11.textContent="Sum of digits: "+sum; }
+</script>
+</body>
+</html>

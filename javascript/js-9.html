@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Palindrome Number</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 9</h1><p>Check Palindrome Number</p></header>
+<main>
+  <div class="program-page">
+    <h1>Check Palindrome Number</h1>
+    <p class="description">Checks whether a number reads the same forwards and backwards.</p>
+    <div class="output-box">
+<input id="n9" type="number" value="121"><button class="btn" onclick="run9()">Check</button><div id="out9" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run9(){ const n=n9.value; const r=n.split("").reverse().join(""); out9.textContent = n + (n===r?" is a Palindrome":" is Not a Palindrome"); }
+</script>
+</body>
+</html>

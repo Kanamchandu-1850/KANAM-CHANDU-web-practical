@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Password Based on Minimum Length</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 110</h1><p>Validate Password Based on Minimum Length</p></header>
+<main>
+  <div class="program-page">
+    <h1>Validate Password Based on Minimum Length</h1>
+    <p class="description">Checks a password has at least 8 characters.</p>
+    <div class="output-box">
+<input id="pw110" type="password" placeholder="Password"><button class="btn" onclick="run110()">Validate</button><div id="out110" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run110(){ out110.textContent = pw110.value.length>=8 ? "Password length OK" : "Password must be at least 8 characters"; }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Application Form with Validation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 131</h1><p>Job Application Form with Validation</p></header>
+<main>
+  <div class="program-page">
+    <h1>Job Application Form with Validation</h1>
+    <p class="description">Validates a name, email, and required cover-letter field.</p>
+    <div class="output-box">
+<form id="f131"><input id="nm131" placeholder="Name" required><input id="em131" placeholder="Email" required><textarea id="cl131" placeholder="Cover letter" required></textarea><button class="btn" type="submit">Apply</button></form><div id="out131" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+f131.addEventListener("submit", e=>{
+  e.preventDefault();
+  const ok = nm131.value.trim() && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em131.value) && cl131.value.trim().length>10;
+  out131.textContent = ok ? "Application received!" : "Please fill all fields correctly (cover letter 10+ chars).";
+});
+</script>
+</body>
+</html>

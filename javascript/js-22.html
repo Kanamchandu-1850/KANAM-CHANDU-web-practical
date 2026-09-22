@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCD of Two Numbers</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 22</h1><p>GCD of Two Numbers</p></header>
+<main>
+  <div class="program-page">
+    <h1>GCD of Two Numbers</h1>
+    <p class="description">Finds the greatest common divisor using the Euclidean algorithm.</p>
+    <div class="output-box">
+<input id="a22" type="number" value="36"><input id="b22" type="number" value="60"><button class="btn" onclick="run22()">Find GCD</button><div id="out22" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run22(){ let a=+a22.value,b=+b22.value; while(b){[a,b]=[b,a%b];} out22.textContent="GCD: "+a; }
+</script>
+</body>
+</html>

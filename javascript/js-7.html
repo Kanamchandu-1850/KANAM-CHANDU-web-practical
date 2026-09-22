@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fibonacci Series</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 7</h1><p>Fibonacci Series</p></header>
+<main>
+  <div class="program-page">
+    <h1>Fibonacci Series</h1>
+    <p class="description">Generates the first N terms of the Fibonacci sequence.</p>
+    <div class="output-box">
+<input id="n7" type="number" value="10"><button class="btn" onclick="run7()">Generate</button><div id="out7" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run7(){
+  let n=+n7.value, a=0,b=1, seq=[a,b];
+  for(let i=2;i<n;i++){ [a,b]=[b,a+b]; seq.push(b); }
+  out7.textContent = seq.slice(0,n).join(", ");
+}
+</script>
+</body>
+</html>

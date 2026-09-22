@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML5 Input Types</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  form.inputs-demo { display: grid; gap: 14px; max-width: 380px; }
+  form.inputs-demo label { font-weight: 600; }
+  form.inputs-demo input { padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 6px; }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1>Program 9</h1>
+  <p>HTML5 Input Types</p>
+</header>
+<main>
+  <div class="program-page">
+    <h1>HTML5 Form Input Types</h1>
+    <p class="description">Demonstrates the email, date, number, and password input types, which give the browser built-in validation and UI.</p>
+
+    <div class="output-box">
+      <form class="inputs-demo">
+        <div>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+        <div>
+          <label for="dob">Date</label><br>
+          <input type="date" id="dob">
+        </div>
+        <div>
+          <label for="age">Number (Age)</label><br>
+          <input type="number" id="age" min="1" max="100">
+        </div>
+        <div>
+          <label for="pwd">Password</label><br>
+          <input type="password" id="pwd" placeholder="Enter password">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Back to HTML Programs</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remove an Event Listener</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 95</h1><p>Remove an Event Listener</p></header>
+<main>
+  <div class="program-page">
+    <h1>Remove an Event Listener</h1>
+    <p class="description">Attaches then removes a listener using removeEventListener.</p>
+    <div class="output-box">
+<button class="btn" id="btn95">Click Me (works once)</button><div id="out95" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function handler95(){ out95.textContent = "Clicked! This listener will now be removed."; document.getElementById("btn95").removeEventListener("click", handler95); }
+document.getElementById("btn95").addEventListener("click", handler95);
+</script>
+</body>
+</html>

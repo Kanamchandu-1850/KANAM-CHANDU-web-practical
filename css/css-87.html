@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-step Form</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .ms-toggle { display:none; }
+  .ms-panel { display:none; }
+  #s1:checked ~ .panels .step1,
+  #s2:checked ~ .panels .step2,
+  #s3:checked ~ .panels .step3 { display:block; }
+  .form-card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:26px; max-width:340px; }
+  .form-card input { width:100%; padding:9px 10px; border:1px solid #d1d5db; border-radius:6px; margin-bottom:10px; }
+  .ms-nav { display:flex; justify-content:space-between; margin-top:14px; }
+  .ms-nav label { padding:8px 16px; border-radius:6px; cursor:pointer; }
+  .ms-next { background:#6366f1; color:#fff; }
+  .ms-back { background:#e5e7eb; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 87</h1><p>Multi-step Form</p></header>
+<main>
+  <div class="program-page">
+    <h1>Multi-step Form (CSS-only)</h1>
+    <p class="description">Radio buttons drive which "step" panel is visible, simulating a wizard-style form without JavaScript.</p>
+    <div class="output-box">
+      <input type="radio" name="step" id="s1" class="ms-toggle" checked>
+      <input type="radio" name="step" id="s2" class="ms-toggle">
+      <input type="radio" name="step" id="s3" class="ms-toggle">
+      <div class="form-card">
+        <div class="panels">
+          <div class="ms-panel step1"><h3>Step 1: Account</h3><input placeholder="Email"><label for="s2" class="ms-next" style="float:right;">Next</label></div>
+          <div class="ms-panel step2"><h3>Step 2: Profile</h3><input placeholder="Full Name">
+            <div class="ms-nav"><label for="s1" class="ms-back">Back</label><label for="s3" class="ms-next">Next</label></div>
+          </div>
+          <div class="ms-panel step3"><h3>Step 3: Confirm</h3><p>Review your details and submit.</p>
+            <div class="ms-nav"><label for="s2" class="ms-back">Back</label><button class="btn">Submit</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

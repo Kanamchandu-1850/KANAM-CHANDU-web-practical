@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Functions</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 15</h1><p>JavaScript Functions</p></header>
+<main>
+  <div class="program-page">
+    <h1>JavaScript Functions</h1>
+    <p class="description">Demonstrates a named function with parameters and a return value.</p>
+    <div class="output-box">
+<input id="n15" type="number" value="6"><button class="btn" onclick="run15()">Square It</button><div id="out15" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function square(x){ return x*x; }
+function run15(){ out15.textContent = "Square: " + square(+n15.value); }
+</script>
+</body>
+</html>

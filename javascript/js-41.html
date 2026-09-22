@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ES6: let, const, Template Literals & Destructuring</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 41</h1><p>ES6: let, const, Template Literals & Destructuring</p></header>
+<main>
+  <div class="program-page">
+    <h1>ES6: let, const, Template Literals & Destructuring</h1>
+    <p class="description">Demonstrates block-scoped variables, template strings, and array/object destructuring.</p>
+    <div class="output-box">
+<button class="btn" onclick="run41()">Run</button><div id="out41" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run41(){
+  let x = 10; const y = 20;
+  const [p,q] = [1,2];
+  const {name, age} = {name:"Priya", age:22};
+  out41.textContent = `x+y=${x+y}\ndestructured array: p=${p}, q=${q}\ndestructured object: ${name}, ${age}`;
+}
+</script>
+</body>
+</html>

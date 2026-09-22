@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stopwatch</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 181</h1><p>Stopwatch</p></header>
+<main>
+  <div class="program-page">
+    <h1>Stopwatch</h1>
+    <p class="description">A full stopwatch mini-project with Start, Stop, and Reset.</p>
+    <div class="output-box">
+<div id="disp181" style="font-size:1.8rem; text-align:center;">00:00</div><div style="text-align:center; margin-top:10px;"><button class="btn" onclick="start181()">Start</button><button class="btn" onclick="stop181()">Stop</button><button class="btn" onclick="reset181()">Reset</button></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let t181=0, iv181;
+function render181(){ const m=String(Math.floor(t181/60)).padStart(2,"0"); const s=String(t181%60).padStart(2,"0"); disp181.textContent=`${m}:${s}`; }
+function start181(){ clearInterval(iv181); iv181=setInterval(()=>{ t181++; render181(); },1000); }
+function stop181(){ clearInterval(iv181); }
+function reset181(){ clearInterval(iv181); t181=0; render181(); }
+</script>
+</body>
+</html>

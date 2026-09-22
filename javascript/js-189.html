@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Marks/Grade Calculator</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 189</h1><p>Student Marks/Grade Calculator</p></header>
+<main>
+  <div class="program-page">
+    <h1>Student Marks/Grade Calculator</h1>
+    <p class="description">Calculates total, average, and letter grade from subject marks.</p>
+    <div class="output-box">
+<input id="m1_189" type="number" placeholder="Subject 1"><input id="m2_189" type="number" placeholder="Subject 2"><input id="m3_189" type="number" placeholder="Subject 3"><button class="btn" onclick="run189()">Calculate</button><div id="out189" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run189(){
+  const marks=[+m1_189.value,+m2_189.value,+m3_189.value];
+  const total=marks.reduce((a,b)=>a+b,0), avg=total/marks.length;
+  let grade = avg>=90?"A+":avg>=75?"A":avg>=60?"B":avg>=40?"C":"F";
+  out189.textContent = `Total: ${total}\nAverage: ${avg.toFixed(2)}\nGrade: ${grade}`;
+}
+</script>
+</body>
+</html>

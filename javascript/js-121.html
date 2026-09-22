@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prevent Form Submission When Validation Fails</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 121</h1><p>Prevent Form Submission When Validation Fails</p></header>
+<main>
+  <div class="program-page">
+    <h1>Prevent Form Submission When Validation Fails</h1>
+    <p class="description">Uses preventDefault() to stop the form from submitting on invalid input.</p>
+    <div class="output-box">
+<form id="f121"><input id="n121" required placeholder="Required field"><button class="btn" type="submit">Submit</button></form><div id="out121" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+f121.addEventListener("submit", e=>{
+  if(!n121.value.trim()){ e.preventDefault(); out121.textContent = "Submission blocked: field is empty."; }
+  else { e.preventDefault(); out121.textContent = "Form would submit now."; }
+});
+</script>
+</body>
+</html>

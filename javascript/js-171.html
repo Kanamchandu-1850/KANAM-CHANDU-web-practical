@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compare localStorage and sessionStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 171</h1><p>Compare localStorage and sessionStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Compare localStorage and sessionStorage</h1>
+    <p class="description">Stores one value in each storage type to show the difference in persistence.</p>
+    <div class="output-box">
+<button class="btn" onclick="run171()">Save in Both</button><div id="out171" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run171(){
+  localStorage.setItem("permKey171", "I stay after closing the browser");
+  sessionStorage.setItem("tempKey171", "I disappear when this tab closes");
+  out171.textContent = "Saved to both. Reopen this page in a new tab — sessionStorage value will be gone, localStorage will remain.";
+}
+</script>
+</body>
+</html>

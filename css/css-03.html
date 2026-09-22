@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combinator Selectors</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .box p { color: #2563eb; }             /* Descendant selector */
+  .box > span { color: #16a34a; font-weight:bold; } /* Child selector */
+  h4 + p { color: #dc2626; }             /* Adjacent sibling selector */
+  h4 ~ p.later { text-decoration: underline; } /* General sibling selector */
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 3</h1><p>Descendant, Child, Adjacent Sibling &amp; General Sibling Selectors</p></header>
+<main>
+  <div class="program-page">
+    <h1>Combinator Selectors</h1>
+    <p class="description">Demonstrates the four main CSS combinators.</p>
+    <div class="output-box">
+      <div class="box">
+        <p>Descendant selector: any &lt;p&gt; inside .box turns blue.</p>
+        <span>Direct child selector: any &lt;span&gt; directly inside .box turns green.</span>
+      </div>
+      <h4>Heading</h4>
+      <p>Adjacent sibling: this paragraph immediately after the h4 turns red.</p>
+      <p class="later">General sibling: this later paragraph (class="later") gets underlined because it follows the h4 somewhere after it.</p>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

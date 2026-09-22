@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Mobile Phone Number</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 108</h1><p>Validate Mobile Phone Number</p></header>
+<main>
+  <div class="program-page">
+    <h1>Validate Mobile Phone Number</h1>
+    <p class="description">Checks that a phone number has exactly 10 digits.</p>
+    <div class="output-box">
+<input id="ph108" placeholder="10-digit number"><button class="btn" onclick="run108()">Validate</button><div id="out108" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run108(){ out108.textContent = /^\d{10}$/.test(ph108.value) ? "Valid phone number" : "Enter a valid 10-digit number"; }
+</script>
+</body>
+</html>

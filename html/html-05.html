@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  form.reg { display: grid; gap: 14px; max-width: 420px; }
+  form.reg label { font-weight: 600; display: block; margin-bottom: 4px; }
+  form.reg input, form.reg select, form.reg textarea {
+    width: 100%; padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 6px;
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1>Program 5</h1>
+  <p>Student Registration Form</p>
+</header>
+<main>
+  <div class="program-page">
+    <h1>Registration Form</h1>
+    <p class="description">A student registration form built using various HTML form elements: text, radio, checkbox, select, textarea, and date input.</p>
+
+    <div class="output-box">
+      <form class="reg">
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+        <div>
+          <label>Gender</label>
+          <input type="radio" id="male" name="gender" value="male"> <label for="male" style="display:inline">Male</label>
+          <input type="radio" id="female" name="gender" value="female"> <label for="female" style="display:inline">Female</label>
+        </div>
+        <div>
+          <label for="course">Course</label>
+          <select id="course" name="course">
+            <option>B.Sc Computer Science</option>
+            <option>B.Com</option>
+            <option>BCA</option>
+          </select>
+        </div>
+        <div>
+          <input type="checkbox" id="terms" name="terms">
+          <label for="terms" style="display:inline">I agree to the terms and conditions</label>
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
+        </div>
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Back to HTML Programs</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>

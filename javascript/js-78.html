@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Options Dynamically to a Select Element</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 78</h1><p>Add Options Dynamically to a Select Element</p></header>
+<main>
+  <div class="program-page">
+    <h1>Add Options Dynamically to a Select Element</h1>
+    <p class="description">Adds new &lt;option&gt; elements to a dropdown one at a time.</p>
+    <div class="output-box">
+<select id="sel78"></select><input id="optText78" placeholder="Option text"><button class="btn" onclick="run78()">Add Option</button>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run78(){ if(!optText78.value) return; const opt=document.createElement("option"); opt.textContent=optText78.value; sel78.appendChild(opt); optText78.value=""; }
+</script>
+</body>
+</html>

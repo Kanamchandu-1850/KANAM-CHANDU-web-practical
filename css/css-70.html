@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drawer and Slide-out Panel</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .drawer2-toggle { display:none; }
+  .drawer2-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.4); z-index:10; }
+  .drawer2-toggle:checked ~ .drawer2-overlay { display:block; }
+  .drawer2-panel { position:absolute; top:0; right:0; width:260px; height:100%; background:#fff; padding:20px; box-shadow:-4px 0 16px rgba(0,0,0,0.15); }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 70</h1><p>Drawer and Slide-out Panel</p></header>
+<main>
+  <div class="program-page">
+    <h1>Slide-out Panel</h1>
+    <p class="description">A panel that slides in from the edge of the screen over an overlay — used for filters, cart previews, or settings.</p>
+    <div class="output-box">
+      <input type="checkbox" id="drawer2Toggle" class="drawer2-toggle">
+      <label for="drawer2Toggle" class="btn">Open Panel</label>
+      <div class="drawer2-overlay">
+        <div class="drawer2-panel">
+          <label for="drawer2Toggle" style="float:right; cursor:pointer; font-weight:bold;">✕</label>
+          <h3>Filters</h3>
+          <p>Panel content goes here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Positioning</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .pos-wrap { position: relative; height: 220px; border:1px solid #d1d5db; background:#f9fafb; margin-bottom:14px; }
+  .pos-static { position: static; background:#e5e7eb; padding:6px; }
+  .pos-relative { position: relative; top:10px; left:20px; background:#dbeafe; padding:6px; display:inline-block; }
+  .pos-absolute { position: absolute; top:10px; right:10px; background:#fef9c3; padding:6px; }
+  .pos-fixed-demo { background:#fecaca; padding:6px; }
+  .pos-sticky { position: sticky; top:0; background:#dcfce7; padding:6px; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 21</h1><p>static, relative, absolute, fixed, sticky Positioning</p></header>
+<main>
+  <div class="program-page">
+    <h1>Positioning Schemes</h1>
+    <p class="description">Demonstrates the five CSS position values inside a relatively-positioned container (note: "fixed" is shown conceptually here since a full-page fixed demo wouldn't fit inline).</p>
+    <div class="output-box">
+      <div class="pos-wrap">
+        <div class="pos-static">static (default, normal flow)</div><br>
+        <div class="pos-relative">relative (shifted 10px down, 20px right from its normal spot)</div>
+        <div class="pos-absolute">absolute (positioned relative to the container's corner)</div>
+      </div>
+      <div class="pos-fixed-demo">fixed would stay in the same screen spot even while scrolling the whole page.</div>
+      <div style="height:120px; overflow:auto; border:1px solid #d1d5db;">
+        <div class="pos-sticky">sticky — scroll this box and I'll stick to the top!</div>
+        <p style="padding:8px;">Scroll content 1</p><p style="padding:8px;">Scroll content 2</p>
+        <p style="padding:8px;">Scroll content 3</p><p style="padding:8px;">Scroll content 4</p>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

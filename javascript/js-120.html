@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display a Success Message After Successful Form Submission</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 120</h1><p>Display a Success Message After Successful Form Submission</p></header>
+<main>
+  <div class="program-page">
+    <h1>Display a Success Message After Successful Form Submission</h1>
+    <p class="description">Shows a green success message once a form is validly submitted.</p>
+    <div class="output-box">
+<form id="f120"><input id="n120" required placeholder="Name"><button class="btn" type="submit">Submit</button></form><div id="out120" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+f120.addEventListener("submit", e=>{
+  e.preventDefault();
+  if(n120.value.trim()){ out120.textContent = "✔ Submitted successfully!"; out120.style.color="#16a34a"; }
+});
+</script>
+</body>
+</html>

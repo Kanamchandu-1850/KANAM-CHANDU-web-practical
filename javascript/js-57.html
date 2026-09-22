@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add and Delete Rows from a Table</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 57</h1><p>Add and Delete Rows from a Table</p></header>
+<main>
+  <div class="program-page">
+    <h1>Add and Delete Rows from a Table</h1>
+    <p class="description">Dynamically adds and removes rows in an HTML table.</p>
+    <div class="output-box">
+<table class="demo-table" id="tbl57"><tr><th>Name</th></tr><tr><td>Arun</td></tr></table><button class="btn" onclick="addRow57()">Add Row</button><button class="btn" onclick="delRow57()">Delete Last Row</button>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function addRow57(){ const row=tbl57.insertRow(); row.insertCell().textContent="New Student"; }
+function delRow57(){ if(tbl57.rows.length>1) tbl57.deleteRow(-1); }
+</script>
+</body>
+</html>

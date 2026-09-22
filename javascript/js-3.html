@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Largest of Three Numbers</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 3</h1><p>Largest of Three Numbers</p></header>
+<main>
+  <div class="program-page">
+    <h1>Largest of Three Numbers</h1>
+    <p class="description">Finds the largest among three user-entered numbers using Math.max().</p>
+    <div class="output-box">
+<input id="a3" type="number" value="4"><input id="b3" type="number" value="9"><input id="c3" type="number" value="7"><button class="btn" onclick="run3()">Find Largest</button><div id="out3" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run3(){ const a=+a3.value,b=+b3.value,c=+c3.value; out3.textContent = "Largest: " + Math.max(a,b,c); }
+</script>
+</body>
+</html>

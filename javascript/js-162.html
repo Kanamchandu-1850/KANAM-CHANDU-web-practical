@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Record System Using localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 162</h1><p>Student Record System Using localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Student Record System Using localStorage</h1>
+    <p class="description">Adds student records to a persisted array in localStorage.</p>
+    <div class="output-box">
+<input id="sn162" placeholder="Student name"><button class="btn" onclick="add162()">Add Student</button><ul id="list162"></ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function getStudents162(){ return JSON.parse(localStorage.getItem("students162")||"[]"); }
+function render162(){ list162.innerHTML = getStudents162().map(s=>`<li>${s}</li>`).join(""); }
+function add162(){ const arr=getStudents162(); arr.push(sn162.value); localStorage.setItem("students162", JSON.stringify(arr)); sn162.value=""; render162(); }
+render162();
+</script>
+</body>
+</html>

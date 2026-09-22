@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Sizing</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .content-box { box-sizing: content-box; width: 200px; padding: 20px; border: 5px solid #dc2626; background:#fee2e2; margin-bottom:12px; }
+  .border-box { box-sizing: border-box; width: 200px; padding: 20px; border: 5px solid #16a34a; background:#dcfce7; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 12</h1><p>box-sizing: content-box vs border-box</p></header>
+<main>
+  <div class="program-page">
+    <h1>Box-sizing Comparison</h1>
+    <p class="description">Both boxes have width:200px with the same padding/border, but render at different total widths because of box-sizing.</p>
+    <div class="output-box">
+      <div class="content-box">content-box: total width = 200 + padding + border = 250px</div>
+      <div class="border-box">border-box: total width stays exactly 200px (padding/border included)</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

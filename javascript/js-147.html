@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Browser Information Using JavaScript</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 147</h1><p>Display Browser Information Using JavaScript</p></header>
+<main>
+  <div class="program-page">
+    <h1>Display Browser Information Using JavaScript</h1>
+    <p class="description">Shows browser name/vendor details from the navigator object.</p>
+    <div class="output-box">
+<div id="out147" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+out147.textContent = `App name: ${navigator.appName}\nVendor: ${navigator.vendor}\nLanguage: ${navigator.language}`;
+</script>
+</body>
+</html>

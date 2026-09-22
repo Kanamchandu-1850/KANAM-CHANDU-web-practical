@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Count Vowels and Consonants</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 36</h1><p>Count Vowels and Consonants</p></header>
+<main>
+  <div class="program-page">
+    <h1>Count Vowels and Consonants</h1>
+    <p class="description">Counts vowels and consonants in a string.</p>
+    <div class="output-box">
+<input id="s36" value="Hello World"><button class="btn" onclick="run36()">Count</button><div id="out36" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run36(){
+  const s=s36.value.toLowerCase().replace(/[^a-z]/g,"");
+  const vowels=(s.match(/[aeiou]/g)||[]).length;
+  out36.textContent = `Vowels: ${vowels}\nConsonants: ${s.length-vowels}`;
+}
+</script>
+</body>
+</html>

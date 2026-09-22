@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Email Using Regex</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 40</h1><p>Validate Email Using Regex</p></header>
+<main>
+  <div class="program-page">
+    <h1>Validate Email Using Regex</h1>
+    <p class="description">Validates an email address format using a regular expression.</p>
+    <div class="output-box">
+<input id="e40" value="test@example.com"><button class="btn" onclick="run40()">Validate</button><div id="out40" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run40(){ const ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e40.value); out40.textContent = e40.value + (ok?" is a valid email":" is NOT a valid email"); }
+</script>
+</body>
+</html>

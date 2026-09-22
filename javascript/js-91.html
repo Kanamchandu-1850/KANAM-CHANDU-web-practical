@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The submit Event</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 91</h1><p>The submit Event</p></header>
+<main>
+  <div class="program-page">
+    <h1>The submit Event</h1>
+    <p class="description">Prevents default form submission and handles it with JavaScript instead.</p>
+    <div class="output-box">
+<form id="form91"><input placeholder="Your name" required><button class="btn" type="submit">Submit</button></form><div id="out91" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+form91.addEventListener("submit", e=>{ e.preventDefault(); out91.textContent = "Form submitted without reloading the page!"; });
+</script>
+</body>
+</html>

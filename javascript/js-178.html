@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRUD Application Using localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 178</h1><p>CRUD Application Using localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>CRUD Application Using localStorage</h1>
+    <p class="description">Full Create, Read, Update, Delete demo backed by localStorage.</p>
+    <div class="output-box">
+<input id="crud178" placeholder="Item name"><button class="btn" onclick="create178()">Create</button><ul id="list178"></ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function getItems178(){ return JSON.parse(localStorage.getItem("crud178")||"[]"); }
+function saveItems178(a){ localStorage.setItem("crud178", JSON.stringify(a)); }
+function render178(){
+  list178.innerHTML = "";
+  getItems178().forEach((item, idx)=>{
+    const li=document.createElement("li");
+    const span=document.createElement("span"); span.textContent=item;
+    const editBtn=document.createElement("button"); editBtn.textContent="Update";
+    editBtn.onclick=()=>{ const v=prompt("New value:", item); if(v){ const a=getItems178(); a[idx]=v; saveItems178(a); render178(); } };
+    const delBtn=document.createElement("button"); delBtn.textContent="Delete";
+    delBtn.onclick=()=>{ const a=getItems178(); a.splice(idx,1); saveItems178(a); render178(); };
+    li.append(span," ",editBtn," ",delBtn);
+    list178.appendChild(li);
+  });
+}
+function create178(){ if(!crud178.value) return; const a=getItems178(); a.push(crud178.value); saveItems178(a); crud178.value=""; render178(); }
+render178();
+</script>
+</body>
+</html>

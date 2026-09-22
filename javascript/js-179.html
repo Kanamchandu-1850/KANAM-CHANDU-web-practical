@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Calculator</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 179</h1><p>Digital Calculator</p></header>
+<main>
+  <div class="program-page">
+    <h1>Digital Calculator</h1>
+    <p class="description">A working calculator supporting +, -, *, / with a button grid.</p>
+    <div class="output-box">
+<div style="max-width:240px;">
+  <input id="calcDisplay179" readonly style="width:100%; padding:10px; font-size:1.2rem; text-align:right; margin-bottom:8px;">
+  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:6px;" id="calcGrid179"></div>
+</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+const keys179 = ["7","8","9","/","4","5","6","*","1","2","3","-","0",".","=","+","C"];
+const grid179 = document.getElementById("calcGrid179");
+keys179.forEach(k=>{
+  const b=document.createElement("button"); b.className="btn"; b.textContent=k;
+  b.onclick=()=>{
+    const d=document.getElementById("calcDisplay179");
+    if(k==="C") d.value="";
+    else if(k==="=") { try{ d.value = eval(d.value); }catch(e){ d.value="Error"; } }
+    else d.value += k;
+  };
+  grid179.appendChild(b);
+});
+</script>
+</body>
+</html>

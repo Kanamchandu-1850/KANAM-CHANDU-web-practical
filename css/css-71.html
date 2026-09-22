@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Command Palette Interface</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .cmdk { max-width:380px; background:#1f2937; border-radius:10px; padding:14px; color:#fff; }
+  .cmdk input { width:100%; padding:10px; border-radius:6px; border:none; margin-bottom:10px; }
+  .cmdk ul { list-style:none; padding:0; margin:0; }
+  .cmdk li { padding:8px 10px; border-radius:6px; color:#d1d5db; }
+  .cmdk li.active { background:#374151; color:#fff; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 71</h1><p>Command Palette Interface</p></header>
+<main>
+  <div class="program-page">
+    <h1>Command Palette</h1>
+    <p class="description">A search-driven quick-action box (like Cmd+K menus) for jumping to actions or pages fast.</p>
+    <div class="output-box">
+      <div class="cmdk">
+        <input type="text" placeholder="Type a command or search...">
+        <ul>
+          <li class="active">📄 Create new document</li>
+          <li>👥 Invite team member</li>
+          <li>⚙️ Open settings</li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

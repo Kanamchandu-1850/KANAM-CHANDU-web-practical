@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save the User's Preferred Font Size</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 168</h1><p>Save the User's Preferred Font Size</p></header>
+<main>
+  <div class="program-page">
+    <h1>Save the User's Preferred Font Size</h1>
+    <p class="description">Lets the user pick and persist a font size for a text block.</p>
+    <div class="output-box">
+<select id="fs168" onchange="setSize168()"><option value="14">Small</option><option value="18">Medium</option><option value="24">Large</option></select><p id="txt168" style="margin-top:10px;">Sample text that resizes.</p>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function setSize168(){ localStorage.setItem("fontSize168", fs168.value); txt168.style.fontSize = fs168.value+"px"; }
+const saved168 = localStorage.getItem("fontSize168");
+if(saved168){ fs168.value=saved168; txt168.style.fontSize=saved168+"px"; }
+</script>
+</body>
+</html>

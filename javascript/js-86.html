@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display the Key Pressed by the User</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 86</h1><p>Display the Key Pressed by the User</p></header>
+<main>
+  <div class="program-page">
+    <h1>Display the Key Pressed by the User</h1>
+    <p class="description">Shows the last key pressed anywhere on the page.</p>
+    <div class="output-box">
+<div id="out86" class="output-line">Press any key...</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+document.addEventListener("keydown", e=>{ out86.textContent = "You pressed: " + e.key; });
+</script>
+</body>
+</html>

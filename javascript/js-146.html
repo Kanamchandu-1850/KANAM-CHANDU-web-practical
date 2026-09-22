@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Navigator Object</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 146</h1><p>The Navigator Object</p></header>
+<main>
+  <div class="program-page">
+    <h1>The Navigator Object</h1>
+    <p class="description">Displays basic information about the user's browser using the navigator object.</p>
+    <div class="output-box">
+<button class="btn" onclick="run146()">Show Browser Info</button><div id="out146" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run146(){ out146.textContent = `User agent: ${navigator.userAgent}\nPlatform: ${navigator.platform}`; }
+</script>
+</body>
+</html>

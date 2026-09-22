@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store Multiple Values Using localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 159</h1><p>Store Multiple Values Using localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Store Multiple Values Using localStorage</h1>
+    <p class="description">Saves several separate key/value pairs at once.</p>
+    <div class="output-box">
+<input id="n159" placeholder="Name"><input id="a159" placeholder="Age"><button class="btn" onclick="run159()">Save Both</button><div id="out159" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run159(){ localStorage.setItem("name",n159.value); localStorage.setItem("age",a159.value); out159.textContent="Saved name and age."; }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visitor Counter Using Browser Storage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 170</h1><p>Visitor Counter Using Browser Storage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Visitor Counter Using Browser Storage</h1>
+    <p class="description">Counts and displays how many times this page has been visited.</p>
+    <div class="output-box">
+<div id="out170" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let visits170 = parseInt(localStorage.getItem("visits170")||"0") + 1;
+localStorage.setItem("visits170", visits170);
+out170.textContent = "You have visited this page " + visits170 + " time(s).";
+</script>
+</body>
+</html>

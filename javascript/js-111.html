@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strong Password Validator</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 111</h1><p>Strong Password Validator</p></header>
+<main>
+  <div class="program-page">
+    <h1>Strong Password Validator</h1>
+    <p class="description">Checks a password for uppercase, lowercase, digit, and symbol.</p>
+    <div class="output-box">
+<input id="pw111" type="password" placeholder="Password"><button class="btn" onclick="run111()">Validate</button><div id="out111" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run111(){
+  const p=pw111.value;
+  const strong = /[a-z]/.test(p) && /[A-Z]/.test(p) && /\d/.test(p) && /[^A-Za-z0-9]/.test(p) && p.length>=8;
+  out111.textContent = strong ? "Strong password" : "Weak: needs upper, lower, digit, symbol, 8+ chars";
+}
+</script>
+</body>
+</html>

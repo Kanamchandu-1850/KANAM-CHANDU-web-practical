@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Clock</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 180</h1><p>Digital Clock</p></header>
+<main>
+  <div class="program-page">
+    <h1>Digital Clock</h1>
+    <p class="description">A large live-updating digital clock display.</p>
+    <div class="output-box">
+<div id="clock180" style="font-size:2rem; font-weight:700; text-align:center;"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function tick180(){ clock180.textContent = new Date().toLocaleTimeString(); } tick180(); setInterval(tick180,1000);
+</script>
+</body>
+</html>

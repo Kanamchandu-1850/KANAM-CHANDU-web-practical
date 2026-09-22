@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outline and Outline-offset</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .out1 { outline: 3px solid #2563eb; padding:14px; margin-bottom:14px; }
+  .out2 { outline: 3px dashed #dc2626; outline-offset: 8px; padding:14px; margin-bottom:14px; }
+  input:focus { outline: 3px solid #16a34a; outline-offset: 3px; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 25</h1><p>outline and outline-offset Properties</p></header>
+<main>
+  <div class="program-page">
+    <h1>Outline Properties</h1>
+    <p class="description">Unlike borders, outlines don't affect layout size and can have an offset gap. Click the input to see a focus outline.</p>
+    <div class="output-box">
+      <div class="out1">A box with a solid blue outline (no offset).</div>
+      <div class="out2">A box with a dashed red outline and 8px offset (gap around it).</div>
+      <input type="text" placeholder="Click me to see the focus outline">
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

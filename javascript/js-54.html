@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>querySelector and querySelectorAll</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 54</h1><p>querySelector and querySelectorAll</p></header>
+<main>
+  <div class="program-page">
+    <h1>querySelector and querySelectorAll</h1>
+    <p class="description">Demonstrates modern CSS-selector-based DOM queries.</p>
+    <div class="output-box">
+<div id="wrap54"><p class="item54">First</p><p class="item54">Second</p></div><button class="btn" onclick="run54()">Style First &amp; All</button>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run54(){ document.querySelector("#wrap54 .item54").style.textDecoration="underline"; document.querySelectorAll(".item54").forEach(p=>p.style.fontStyle="italic"); }
+</script>
+</body>
+</html>

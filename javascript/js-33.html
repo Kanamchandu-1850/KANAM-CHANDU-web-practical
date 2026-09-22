@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Common Elements in Two Arrays</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 33</h1><p>Common Elements in Two Arrays</p></header>
+<main>
+  <div class="program-page">
+    <h1>Common Elements in Two Arrays</h1>
+    <p class="description">Finds elements that exist in both arrays.</p>
+    <div class="output-box">
+<input id="arr33a" value="1,2,3,4"><input id="arr33b" value="3,4,5,6"><button class="btn" onclick="run33()">Find Common</button><div id="out33" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run33(){ const a=arr33a.value.split(","), b=arr33b.value.split(","); out33.textContent = a.filter(x=>b.includes(x)).join(", "); }
+</script>
+</body>
+</html>

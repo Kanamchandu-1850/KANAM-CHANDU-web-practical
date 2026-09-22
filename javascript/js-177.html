@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Marks Database Using localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 177</h1><p>Student Marks Database Using localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Student Marks Database Using localStorage</h1>
+    <p class="description">Stores multiple student mark records as a JSON array.</p>
+    <div class="output-box">
+<input id="sn177" placeholder="Name"><input id="sm177" type="number" placeholder="Marks"><button class="btn" onclick="add177()">Add Record</button><ul id="list177"></ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function getData177(){ return JSON.parse(localStorage.getItem("marks177")||"[]"); }
+function render177(){ list177.innerHTML = getData177().map(s=>`<li>${s.name}: ${s.marks}</li>`).join(""); }
+function add177(){ const a=getData177(); a.push({name:sn177.value, marks:sm177.value}); localStorage.setItem("marks177", JSON.stringify(a)); render177(); }
+render177();
+</script>
+</body>
+</html>

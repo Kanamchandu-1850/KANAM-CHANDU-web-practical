@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Positive, Negative, or Zero</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 5</h1><p>Positive, Negative, or Zero</p></header>
+<main>
+  <div class="program-page">
+    <h1>Positive, Negative, or Zero</h1>
+    <p class="description">Checks the sign of a number using if-else.</p>
+    <div class="output-box">
+<input id="n5" type="number" value="-3"><button class="btn" onclick="run5()">Check</button><div id="out5" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run5(){ const n=+n5.value; out5.textContent = n>0?"Positive":(n<0?"Negative":"Zero"); }
+</script>
+</body>
+</html>

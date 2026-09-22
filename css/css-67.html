@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popover Component</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .popover-wrap { position:relative; display:inline-block; }
+  .popover-box { display:none; position:absolute; top:110%; left:0; width:220px; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:14px; box-shadow:0 10px 24px rgba(0,0,0,0.12); z-index:2; }
+  .popover-toggle:checked ~ .popover-box { display:block; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 67</h1><p>Popover Component</p></header>
+<main>
+  <div class="program-page">
+    <h1>Popover</h1>
+    <p class="description">A larger, richer overlay than a tooltip, toggled here with a checkbox hack (click the button to open/close).</p>
+    <div class="output-box">
+      <div class="popover-wrap">
+        <input type="checkbox" id="popToggle" class="popover-toggle" style="display:none;">
+        <label for="popToggle" class="btn">Click for details</label>
+        <div class="popover-box"><strong>Plan Details</strong><p style="margin:6px 0 0;">10 seats, renews monthly, cancel anytime.</p></div>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

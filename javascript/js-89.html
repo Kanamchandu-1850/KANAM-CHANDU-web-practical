@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The change Event</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 89</h1><p>The change Event</p></header>
+<main>
+  <div class="program-page">
+    <h1>The change Event</h1>
+    <p class="description">Fires when a select dropdown's value changes.</p>
+    <div class="output-box">
+<select id="sel89"><option>Red</option><option>Green</option><option>Blue</option></select><div id="out89" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+sel89.addEventListener("change", ()=>{ out89.textContent = "You chose: " + sel89.value; });
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dividers and Section Separators</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .hr-plain { border:none; border-top:1px solid #e5e7eb; margin:20px 0; }
+  .hr-dashed { border:none; border-top:2px dashed #d1d5db; margin:20px 0; }
+  .hr-text { display:flex; align-items:center; text-align:center; color:#9ca3af; margin:20px 0; }
+  .hr-text::before, .hr-text::after { content:""; flex:1; border-bottom:1px solid #e5e7eb; }
+  .hr-text span { padding:0 12px; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 63</h1><p>Dividers and Section Separators</p></header>
+<main>
+  <div class="program-page">
+    <h1>Dividers</h1>
+    <p class="description">Plain, dashed, and text-in-the-middle dividers used to separate page sections.</p>
+    <div class="output-box">
+      <p>Section one content.</p>
+      <hr class="hr-plain">
+      <p>Section two content.</p>
+      <hr class="hr-dashed">
+      <div class="hr-text"><span>OR</span></div>
+      <p>Section three content.</p>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

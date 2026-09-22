@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Application</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 185</h1><p>Quiz Application</p></header>
+<main>
+  <div class="program-page">
+    <h1>Quiz Application</h1>
+    <p class="description">A simple multiple-question quiz with score tracking.</p>
+    <div class="output-box">
+<div id="q185"></div><div id="opts185"></div><div id="score185" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+const questions185 = [
+  { q:"Capital of France?", opts:["Paris","Rome","Berlin"], a:"Paris" },
+  { q:"2 + 2 * 2 = ?", opts:["6","8","4"], a:"6" },
+  { q:"HTML stands for?", opts:["Hyper Text Markup Language","High Text Machine Language","None"], a:"Hyper Text Markup Language" }
+];
+let idx185=0, score185v=0;
+function render185(){
+  if(idx185>=questions185.length){ q185.textContent="Quiz complete!"; opts185.innerHTML=""; score185.textContent="Final score: "+score185v+"/"+questions185.length; return; }
+  const cur = questions185[idx185];
+  q185.textContent = cur.q;
+  opts185.innerHTML = cur.opts.map(o=>`<button class="btn" onclick="answer185('${o}')">${o}</button>`).join(" ");
+}
+function answer185(choice){
+  if(choice===questions185[idx185].a) score185v++;
+  idx185++;
+  render185();
+}
+render185();
+</script>
+</body>
+</html>

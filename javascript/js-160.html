@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store an Array in localStorage Using JSON</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 160</h1><p>Store an Array in localStorage Using JSON</p></header>
+<main>
+  <div class="program-page">
+    <h1>Store an Array in localStorage Using JSON</h1>
+    <p class="description">Serializes an array with JSON.stringify before saving.</p>
+    <div class="output-box">
+<input id="arr160" value="Apple,Banana,Mango"><button class="btn" onclick="run160()">Save Array</button><div id="out160" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run160(){ localStorage.setItem("fruits", JSON.stringify(arr160.value.split(","))); out160.textContent = "Saved: " + localStorage.getItem("fruits"); }
+</script>
+</body>
+</html>

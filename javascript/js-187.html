@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic-Tac-Toe Game</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 187</h1><p>Tic-Tac-Toe Game</p></header>
+<main>
+  <div class="program-page">
+    <h1>Tic-Tac-Toe Game</h1>
+    <p class="description">A two-player Tic-Tac-Toe game played on a 3x3 grid.</p>
+    <div class="output-box">
+<div id="board187" style="display:grid; grid-template-columns:repeat(3,60px); gap:4px;"></div><div id="turn187" class="output-line">Turn: X</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let cells187 = Array(9).fill("");
+let turn187 = "X";
+const board187 = document.getElementById("board187");
+function render187(){
+  board187.innerHTML="";
+  cells187.forEach((c,i)=>{
+    const cell=document.createElement("div");
+    cell.textContent=c;
+    cell.style.cssText="width:60px; height:60px; background:#f3f4f6; display:flex; align-items:center; justify-content:center; font-size:1.5rem; cursor:pointer; border:1px solid #d1d5db;";
+    cell.onclick=()=>{ if(!cells187[i]){ cells187[i]=turn187; turn187 = turn187==="X"?"O":"X"; document.getElementById("turn187").textContent="Turn: "+turn187; render187(); } };
+    board187.appendChild(cell);
+  });
+}
+render187();
+</script>
+</body>
+</html>

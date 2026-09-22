@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequency of Each Element in an Array</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 32</h1><p>Frequency of Each Element in an Array</p></header>
+<main>
+  <div class="program-page">
+    <h1>Frequency of Each Element in an Array</h1>
+    <p class="description">Counts how many times each element appears.</p>
+    <div class="output-box">
+<input id="arr32" value="a,b,a,c,b,a"><button class="btn" onclick="run32()">Count</button><div id="out32" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run32(){
+  const a=arr32.value.split(","); const freq={};
+  a.forEach(x=>freq[x]=(freq[x]||0)+1);
+  out32.textContent = Object.entries(freq).map(([k,v])=>`${k}: ${v}`).join("\n");
+}
+</script>
+</body>
+</html>

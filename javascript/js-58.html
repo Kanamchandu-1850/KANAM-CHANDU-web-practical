@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search/Filter Table Records</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 58</h1><p>Search/Filter Table Records</p></header>
+<main>
+  <div class="program-page">
+    <h1>Search/Filter Table Records</h1>
+    <p class="description">Filters visible table rows based on a search box's text.</p>
+    <div class="output-box">
+<input id="search58" placeholder="Search name..."><table class="demo-table" id="tbl58"><tr><th>Name</th></tr><tr><td>Arun</td></tr><tr><td>Priya</td></tr><tr><td>Kiran</td></tr></table>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+search58.addEventListener("input", function(){
+  const term=this.value.toLowerCase();
+  for(const row of tbl58.rows) {
+    if(row.rowIndex===0) continue;
+    row.style.display = row.textContent.toLowerCase().includes(term) ? "" : "none";
+  }
+});
+</script>
+</body>
+</html>

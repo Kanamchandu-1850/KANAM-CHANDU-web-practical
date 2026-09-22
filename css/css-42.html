@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breadcrumb Navigation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .breadcrumb { list-style:none; display:flex; gap:6px; padding:0; margin:0; }
+  .breadcrumb li:not(:last-child)::after { content: "›"; margin-left:6px; color:#9ca3af; }
+  .breadcrumb a { color:#6366f1; text-decoration:none; }
+  .breadcrumb li:last-child { color:#6b7280; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 42</h1><p>Breadcrumb Navigation Component</p></header>
+<main>
+  <div class="program-page">
+    <h1>Breadcrumbs</h1>
+    <p class="description">Shows the user's location within a hierarchy using a horizontal trail of links.</p>
+    <div class="output-box">
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Billing</a></li>
+        <li>Invoices</li>
+      </ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

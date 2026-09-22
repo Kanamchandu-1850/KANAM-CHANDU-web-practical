@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Count the Number of Keyboard Key Presses</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 87</h1><p>Count the Number of Keyboard Key Presses</p></header>
+<main>
+  <div class="program-page">
+    <h1>Count the Number of Keyboard Key Presses</h1>
+    <p class="description">Counts total key presses in an input field.</p>
+    <div class="output-box">
+<input id="in87" placeholder="Type something"><div id="out87" class="output-line">Presses: 0</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let count87=0; in87.addEventListener("keydown", ()=>{ count87++; out87.textContent = "Presses: " + count87; });
+</script>
+</body>
+</html>

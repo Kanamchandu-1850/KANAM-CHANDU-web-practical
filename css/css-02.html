@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic CSS Selectors</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  * { box-sizing: border-box; }               /* Universal selector */
+  p { color: #374151; }                        /* Element selector */
+  .note { background:#e0f2fe; padding:6px; }   /* Class selector */
+  #special { border:2px solid #7c3aed; padding:8px; } /* ID selector */
+  input[type="text"] { border-color: #16a34a; } /* Attribute selector */
+  h3, .note, #special { font-family: Georgia, serif; } /* Grouping selector */
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 2</h1><p>Universal, Element, Class, ID, Attribute &amp; Grouping Selectors</p></header>
+<main>
+  <div class="program-page">
+    <h1>Basic Selectors</h1>
+    <p class="description">Demonstrates six fundamental selector types in one page.</p>
+    <div class="output-box">
+      <p>Styled by the <strong>element</strong> selector (p).</p>
+      <p class="note">Styled by the <strong>class</strong> selector (.note).</p>
+      <div id="special">Styled by the <strong>ID</strong> selector (#special).</div>
+      <input type="text" placeholder="Styled by attribute selector input[type=text]">
+      <h3>This heading is grouped with .note and #special for the same font.</h3>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

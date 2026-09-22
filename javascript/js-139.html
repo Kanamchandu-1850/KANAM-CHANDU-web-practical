@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 139</h1><p>Countdown Timer</p></header>
+<main>
+  <div class="program-page">
+    <h1>Countdown Timer</h1>
+    <p class="description">Counts down from 30 seconds to zero.</p>
+    <div class="output-box">
+<button class="btn" onclick="run139()">Start Countdown</button><div id="out139" class="output-line">30</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let iv139;
+function run139(){
+  let t=30; clearInterval(iv139);
+  iv139=setInterval(()=>{ t--; out139.textContent = t>=0?t:"Time's up!"; if(t<0) clearInterval(iv139); }, 1000);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Password and Confirm Password Fields</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 112</h1><p>Validate Password and Confirm Password Fields</p></header>
+<main>
+  <div class="program-page">
+    <h1>Validate Password and Confirm Password Fields</h1>
+    <p class="description">Checks that the password and confirmation match.</p>
+    <div class="output-box">
+<input id="pw112" type="password" placeholder="Password"><input id="cpw112" type="password" placeholder="Confirm Password"><button class="btn" onclick="run112()">Validate</button><div id="out112" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run112(){ out112.textContent = pw112.value===cpw112.value && pw112.value!=="" ? "Passwords match" : "Passwords do not match"; }
+</script>
+</body>
+</html>

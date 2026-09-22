@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Border-radius Shapes</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .shapes { display:flex; gap:16px; flex-wrap:wrap; align-items:center; }
+  .card-shape { width:140px; height:90px; background:#6366f1; border-radius:14px; }
+  .circle-shape { width:90px; height:90px; background:#f59e0b; border-radius:50%; }
+  .pill-shape { width:160px; height:50px; background:#16a34a; border-radius:999px; display:flex; align-items:center; justify-content:center; color:#fff; }
+  .custom-shape { width:120px; height:90px; background:#dc2626; border-radius: 50% 20% / 20% 50%; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 16</h1><p>border-radius: Rounded Cards, Circles, Pills &amp; Custom Shapes</p></header>
+<main>
+  <div class="program-page">
+    <h1>Border-radius Shapes</h1>
+    <p class="description">Shows how varying border-radius values create cards, circles, pills, and blob-like shapes.</p>
+    <div class="output-box shapes">
+      <div class="card-shape"></div>
+      <div class="circle-shape"></div>
+      <div class="pill-shape">Pill Button</div>
+      <div class="custom-shape"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

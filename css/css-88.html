@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation and Error Messages</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .form-card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:26px; max-width:340px; }
+  .form-card input { width:100%; padding:9px 10px; border:1px solid #d1d5db; border-radius:6px; }
+  .form-card input:invalid:not(:placeholder-shown) { border-color:#dc2626; }
+  .error-msg { color:#dc2626; font-size:0.8rem; margin:4px 0 10px; }
+  .field { margin-bottom:6px; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 88</h1><p>Form Validation and Error Messages (CSS)</p></header>
+<main>
+  <div class="program-page">
+    <h1>CSS Validation Styling</h1>
+    <p class="description">Uses the :invalid pseudo-class to turn a field's border red when its value doesn't match the required pattern (try typing an invalid email).</p>
+    <div class="output-box">
+      <div class="form-card">
+        <div class="field">
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required>
+          <div class="error-msg">Please enter a valid email address.</div>
+        </div>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

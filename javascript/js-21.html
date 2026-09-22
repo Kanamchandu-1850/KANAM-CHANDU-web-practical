@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swap Two Numbers</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 21</h1><p>Swap Two Numbers</p></header>
+<main>
+  <div class="program-page">
+    <h1>Swap Two Numbers</h1>
+    <p class="description">Swaps two numbers using a temporary variable.</p>
+    <div class="output-box">
+<input id="a21" type="number" value="3"><input id="b21" type="number" value="9"><button class="btn" onclick="run21()">Swap</button><div id="out21" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run21(){ let a=+a21.value,b=+b21.value; [a,b]=[b,a]; out21.textContent = `a = ${a}, b = ${b}`; }
+</script>
+</body>
+</html>

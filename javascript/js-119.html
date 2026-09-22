@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Error Messages Beside Fields</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 119</h1><p>Display Error Messages Beside Fields</p></header>
+<main>
+  <div class="program-page">
+    <h1>Display Error Messages Beside Fields</h1>
+    <p class="description">Shows a per-field inline error message on invalid input.</p>
+    <div class="output-box">
+<input id="em119" placeholder="Email"><span id="err119" style="color:#dc2626; font-size:0.85rem;"></span><br><button class="btn" onclick="run119()">Validate</button>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run119(){ err119.textContent = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em119.value) ? "" : "Invalid email"; }
+</script>
+</body>
+</html>

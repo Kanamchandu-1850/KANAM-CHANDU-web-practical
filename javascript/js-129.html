@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form with Password Confirmation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 129</h1><p>Registration Form with Password Confirmation</p></header>
+<main>
+  <div class="program-page">
+    <h1>Registration Form with Password Confirmation</h1>
+    <p class="description">Validates password match live within a full registration form.</p>
+    <div class="output-box">
+<form id="f129"><input placeholder="Name" required><input id="pw129" type="password" placeholder="Password"><input id="cpw129" type="password" placeholder="Confirm Password"><div id="match129" style="font-size:0.85rem;"></div><button class="btn" type="submit">Register</button></form>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function check129(){ match129.textContent = cpw129.value ? (pw129.value===cpw129.value ? "✔ Match" : "✕ Do not match") : ""; }
+pw129.addEventListener("input", check129); cpw129.addEventListener("input", check129);
+document.getElementById("f129").addEventListener("submit", e=>e.preventDefault());
+</script>
+</body>
+</html>

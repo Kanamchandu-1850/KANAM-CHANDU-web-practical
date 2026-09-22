@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>calc(), min(), max(), clamp()</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .calc-box { width: calc(100% - 80px); background:#dbeafe; padding:10px; margin-bottom:8px; }
+  .min-box { width: min(80%, 300px); background:#dcfce7; padding:10px; margin-bottom:8px; }
+  .max-box { width: max(40%, 250px); background:#fef9c3; padding:10px; margin-bottom:8px; }
+  .clamp-text { font-size: clamp(1rem, 2vw + 0.5rem, 2rem); background:#fce7f3; padding:10px; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 20</h1><p>calc(), min(), max(), and clamp() Functions</p></header>
+<main>
+  <div class="program-page">
+    <h1>Modern CSS Sizing Functions</h1>
+    <p class="description">These functions let width/font-size adapt responsively without media queries. Try resizing the browser window.</p>
+    <div class="output-box">
+      <div class="calc-box">width: calc(100% - 80px)</div>
+      <div class="min-box">width: min(80%, 300px)</div>
+      <div class="max-box">width: max(40%, 250px)</div>
+      <div class="clamp-text">font-size: clamp(1rem, 2vw + 0.5rem, 2rem) — this text scales with the viewport within limits.</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark/Light Theme Switcher Using localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 167</h1><p>Dark/Light Theme Switcher Using localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Dark/Light Theme Switcher Using localStorage</h1>
+    <p class="description">Toggles and remembers the page's light/dark theme preference.</p>
+    <div class="output-box">
+<button class="btn" onclick="toggle167()">Toggle Theme</button><p id="themeText167">Current theme applies to this box.</p>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function apply167(theme){
+  document.getElementById("themeText167").style.background = theme==="dark" ? "#1f2937" : "#f3f4f6";
+  document.getElementById("themeText167").style.color = theme==="dark" ? "#fff" : "#111827";
+}
+function toggle167(){
+  const cur = localStorage.getItem("theme167")==="dark" ? "light" : "dark";
+  localStorage.setItem("theme167", cur); apply167(cur);
+}
+apply167(localStorage.getItem("theme167")||"light");
+</script>
+</body>
+</html>

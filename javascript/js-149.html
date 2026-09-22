@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detect Whether the Browser is Online or Offline</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 149</h1><p>Detect Whether the Browser is Online or Offline</p></header>
+<main>
+  <div class="program-page">
+    <h1>Detect Whether the Browser is Online or Offline</h1>
+    <p class="description">Checks the browser's current network connectivity status.</p>
+    <div class="output-box">
+<button class="btn" onclick="run149()">Check Status</button><div id="out149" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run149(){ out149.textContent = navigator.onLine ? "You are Online" : "You are Offline"; }
+</script>
+</body>
+</html>

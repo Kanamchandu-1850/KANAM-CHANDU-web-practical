@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demonstrate createElement, appendChild, remove, replaceChild</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 73</h1><p>Demonstrate createElement, appendChild, remove, replaceChild</p></header>
+<main>
+  <div class="program-page">
+    <h1>Demonstrate createElement, appendChild, remove, replaceChild</h1>
+    <p class="description">Shows all four core DOM manipulation methods together.</p>
+    <div class="output-box">
+<ul id="demo73"><li id="oldItem73">Old Item</li></ul><button class="btn" onclick="run73()">Run Demo</button>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run73(){
+  const newItem = document.createElement("li");
+  newItem.textContent = "Brand New Item";
+  demo73.appendChild(newItem);
+  const oldItem = document.getElementById("oldItem73");
+  if(oldItem){
+    const replacement = document.createElement("li");
+    replacement.textContent = "Replaced Item";
+    demo73.replaceChild(replacement, oldItem);
+  }
+}
+</script>
+</body>
+</html>

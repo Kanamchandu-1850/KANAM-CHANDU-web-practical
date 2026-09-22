@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merge Two Arrays</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 31</h1><p>Merge Two Arrays</p></header>
+<main>
+  <div class="program-page">
+    <h1>Merge Two Arrays</h1>
+    <p class="description">Merges two arrays into one using the spread operator.</p>
+    <div class="output-box">
+<input id="arr31a" value="1,2,3"><input id="arr31b" value="4,5,6"><button class="btn" onclick="run31()">Merge</button><div id="out31" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run31(){ const a=arr31a.value.split(","), b=arr31b.value.split(","); out31.textContent = [...a,...b].join(", "); }
+</script>
+</body>
+</html>

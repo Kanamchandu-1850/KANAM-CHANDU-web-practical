@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remove Duplicate Elements from Array</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 30</h1><p>Remove Duplicate Elements from Array</p></header>
+<main>
+  <div class="program-page">
+    <h1>Remove Duplicate Elements from Array</h1>
+    <p class="description">Removes duplicate values from an array using a Set.</p>
+    <div class="output-box">
+<input id="arr30" value="1,2,2,3,4,4,5"><button class="btn" onclick="run30()">Remove Duplicates</button><div id="out30" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run30(){ const a=[...new Set(arr30.value.split(","))]; out30.textContent = a.join(", "); }
+</script>
+</body>
+</html>

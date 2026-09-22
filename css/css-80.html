@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timeline and Activity History</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .timeline { border-left:2px solid #e5e7eb; padding-left:20px; max-width:320px; }
+  .t-event { position:relative; margin-bottom:20px; }
+  .t-event::before { content:""; position:absolute; left:-26px; top:4px; width:10px; height:10px; border-radius:50%; background:#6366f1; }
+  .t-event .date { color:#9ca3af; font-size:0.8rem; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 80</h1><p>Timeline and Activity History Component</p></header>
+<main>
+  <div class="program-page">
+    <h1>Timeline</h1>
+    <p class="description">A vertical line with dots marking historical events in chronological order.</p>
+    <div class="output-box">
+      <div class="timeline">
+        <div class="t-event"><div class="date">Sep 1, 2026</div><strong>Account created</strong></div>
+        <div class="t-event"><div class="date">Sep 5, 2026</div><strong>Upgraded to Pro plan</strong></div>
+        <div class="t-event"><div class="date">Sep 12, 2026</div><strong>Invited 3 team members</strong></div>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

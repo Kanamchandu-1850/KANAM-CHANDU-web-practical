@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Focus and Blur Events</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 88</h1><p>Focus and Blur Events</p></header>
+<main>
+  <div class="program-page">
+    <h1>Focus and Blur Events</h1>
+    <p class="description">Highlights an input when focused and un-highlights on blur.</p>
+    <div class="output-box">
+<input id="in88" placeholder="Click here" style="padding:8px;">
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+in88.addEventListener("focus", ()=>{ in88.style.background="#dbeafe"; }); in88.addEventListener("blur", ()=>{ in88.style.background=""; });
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inheritance, Specificity &amp; Cascade</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .parent { color: #6366f1; font-family: Georgia, serif; }
+  p.special { color: #dc2626 !important; }      /* highest specificity wins */
+  #idwins { color: #16a34a; }                    /* ID beats class */
+  .classloses { color: #f59e0b; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 19</h1><p>CSS Inheritance, Specificity &amp; Cascade</p></header>
+<main>
+  <div class="program-page">
+    <h1>Inheritance, Specificity &amp; Cascade</h1>
+    <p class="description">The child paragraph below inherits color/font from its parent. The specificity example shows an ID selector overriding a class selector, and !important overriding everything else.</p>
+    <div class="output-box">
+      <div class="parent">
+        Parent text color and font.
+        <p>This paragraph has no color set, so it INHERITS the parent's color and font.</p>
+      </div>
+      <p class="special">This has both a normal class rule and an !important rule — !important wins (red).</p>
+      <p id="idwins" class="classloses">ID selector (#idwins, green) beats class selector (.classloses, orange) due to higher specificity.</p>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

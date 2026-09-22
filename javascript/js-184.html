@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Application (Simulated)</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 184</h1><p>Weather Application (Simulated)</p></header>
+<main>
+  <div class="program-page">
+    <h1>Weather Application (Simulated)</h1>
+    <p class="description">A weather-lookup UI using simulated data (no external API key required).</p>
+    <div class="output-box">
+<input id="city184" placeholder="Enter city name" value="Chennai"><button class="btn" onclick="run184()">Get Weather</button><div id="out184" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run184(){
+  const temps = {chennai:32, delhi:28, mumbai:30, london:15, "new york":22};
+  const key = city184.value.trim().toLowerCase();
+  const temp = temps[key] ?? (20 + Math.floor(Math.random()*15));
+  out184.textContent = `Weather in ${city184.value}: ${temp}°C, Partly Cloudy (simulated data)`;
+}
+</script>
+</body>
+</html>

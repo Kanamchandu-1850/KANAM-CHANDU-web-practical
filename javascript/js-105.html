@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form Validation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 105</h1><p>Login Form Validation</p></header>
+<main>
+  <div class="program-page">
+    <h1>Login Form Validation</h1>
+    <p class="description">Validates that both username and password are provided.</p>
+    <div class="output-box">
+<form id="f105"><input id="user105" placeholder="Username"><input id="pass105" type="password" placeholder="Password"><button class="btn" type="submit">Login</button></form><div id="out105" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+f105.addEventListener("submit", e=>{
+  e.preventDefault();
+  out105.textContent = (user105.value && pass105.value) ? "Login successful!" : "Both fields are required.";
+});
+</script>
+</body>
+</html>

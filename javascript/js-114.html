@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Gender Selection</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 114</h1><p>Validate Gender Selection</p></header>
+<main>
+  <div class="program-page">
+    <h1>Validate Gender Selection</h1>
+    <p class="description">Ensures a radio button option has been selected.</p>
+    <div class="output-box">
+<form id="f114"><label><input type="radio" name="g114" value="M">Male</label> <label><input type="radio" name="g114" value="F">Female</label><br><button class="btn" type="button" onclick="run114()">Validate</button></form><div id="out114" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run114(){ const sel=document.querySelector("input[name=g114]:checked"); out114.textContent = sel ? "Selected: "+sel.value : "Please select a gender"; }
+</script>
+</body>
+</html>

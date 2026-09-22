@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sort Table Records Using JavaScript</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 77</h1><p>Sort Table Records Using JavaScript</p></header>
+<main>
+  <div class="program-page">
+    <h1>Sort Table Records Using JavaScript</h1>
+    <p class="description">Sorts an HTML table's rows alphabetically when a header is clicked.</p>
+    <div class="output-box">
+<table class="demo-table" id="tbl77"><tr><th onclick="sortTbl77()" style="cursor:pointer;">Name ⬍</th></tr><tr><td>Kiran</td></tr><tr><td>Arun</td></tr><tr><td>Priya</td></tr></table>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function sortTbl77(){
+  const rows = Array.from(tbl77.rows).slice(1);
+  rows.sort((a,b)=> a.cells[0].textContent.localeCompare(b.cells[0].textContent));
+  rows.forEach(r=>tbl77.appendChild(r));
+}
+</script>
+</body>
+</html>

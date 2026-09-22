@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List Application</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 183</h1><p>To-Do List Application</p></header>
+<main>
+  <div class="program-page">
+    <h1>To-Do List Application</h1>
+    <p class="description">A complete to-do list: add, complete, and delete tasks.</p>
+    <div class="output-box">
+<input id="task183" placeholder="Add a task"><button class="btn" onclick="add183()">Add</button><ul id="list183"></ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function add183(){
+  if(!task183.value.trim()) return;
+  const li=document.createElement("li");
+  const span=document.createElement("span"); span.textContent=task183.value;
+  span.style.cursor="pointer";
+  span.onclick=()=>span.style.textDecoration = span.style.textDecoration==="line-through"?"none":"line-through";
+  const del=document.createElement("button"); del.textContent="✕"; del.style.marginLeft="8px"; del.onclick=()=>li.remove();
+  li.append(span, del);
+  list183.appendChild(li);
+  task183.value="";
+}
+</script>
+</body>
+</html>

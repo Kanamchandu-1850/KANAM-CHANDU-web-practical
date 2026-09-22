@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cursor Styles</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .cursor-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; }
+  .cursor-grid div { padding:16px; background:#eef2ff; border-radius:8px; text-align:center; }
+  .c-pointer { cursor: pointer; }
+  .c-move { cursor: move; }
+  .c-not-allowed { cursor: not-allowed; }
+  .c-text { cursor: text; }
+  .c-help { cursor: help; }
+  .c-zoom { cursor: zoom-in; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 24</h1><p>CSS Cursor Styles and Pointer Interactions</p></header>
+<main>
+  <div class="program-page">
+    <h1>Cursor Styles</h1>
+    <p class="description">Hover over each box to see the different cursor styles in action.</p>
+    <div class="output-box cursor-grid">
+      <div class="c-pointer">pointer</div>
+      <div class="c-move">move</div>
+      <div class="c-not-allowed">not-allowed</div>
+      <div class="c-text">text</div>
+      <div class="c-help">help</div>
+      <div class="c-zoom">zoom-in</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

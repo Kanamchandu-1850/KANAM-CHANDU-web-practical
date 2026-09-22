@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restore Previously Entered Form Data After Refreshing</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 175</h1><p>Restore Previously Entered Form Data After Refreshing</p></header>
+<main>
+  <div class="program-page">
+    <h1>Restore Previously Entered Form Data After Refreshing</h1>
+    <p class="description">Reloads a saved draft into a form field when the page loads.</p>
+    <div class="output-box">
+<textarea id="restore175" rows="3" placeholder="Type something, then refresh the page" oninput="localStorage.setItem('restore175', this.value)"></textarea>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+restore175.value = localStorage.getItem("restore175") || "";
+</script>
+</body>
+</html>

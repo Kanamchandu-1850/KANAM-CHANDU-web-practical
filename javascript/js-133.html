@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculate and Display Age from Date of Birth</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 133</h1><p>Calculate and Display Age from Date of Birth</p></header>
+<main>
+  <div class="program-page">
+    <h1>Calculate and Display Age from Date of Birth</h1>
+    <p class="description">Computes the user's current age from a chosen date of birth.</p>
+    <div class="output-box">
+<input id="dob133" type="date"><button class="btn" onclick="run133()">Calculate Age</button><div id="out133" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run133(){
+  const dob=new Date(dob133.value); const today=new Date();
+  let age = today.getFullYear()-dob.getFullYear();
+  const m = today.getMonth()-dob.getMonth();
+  if(m<0 || (m===0 && today.getDate()<dob.getDate())) age--;
+  out133.textContent = isNaN(age) ? "Please pick a date" : "Age: " + age + " years";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a Dynamic Ordered List from User Input</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 76</h1><p>Create a Dynamic Ordered List from User Input</p></header>
+<main>
+  <div class="program-page">
+    <h1>Create a Dynamic Ordered List from User Input</h1>
+    <p class="description">Adds numbered list items based on comma-separated user input.</p>
+    <div class="output-box">
+<input id="input76" placeholder="item1,item2,item3"><button class="btn" onclick="run76()">Build List</button><div id="wrap76"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run76(){ const items=input76.value.split(",").map(s=>s.trim()).filter(Boolean); wrap76.innerHTML = "<ol>" + items.map(i=>`<li>${i}</li>`).join("") + "</ol>"; }
+</script>
+</body>
+</html>

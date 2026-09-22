@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currency Converter (Simulated Rates)</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 194</h1><p>Currency Converter (Simulated Rates)</p></header>
+<main>
+  <div class="program-page">
+    <h1>Currency Converter (Simulated Rates)</h1>
+    <p class="description">Converts between currencies using fixed sample exchange rates (no live API needed).</p>
+    <div class="output-box">
+<input id="amt194" type="number" value="100"><select id="from194"><option>USD</option><option>EUR</option><option>INR</option></select> to <select id="to194"><option>INR</option><option>USD</option><option>EUR</option></select><button class="btn" onclick="run194()">Convert</button><div id="out194" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+const rates194 = { USD:1, EUR:0.92, INR:83.2 };
+function run194(){
+  const amt=+amt194.value;
+  const usd = amt/rates194[from194.value];
+  const result = usd*rates194[to194.value];
+  out194.textContent = `${amt} ${from194.value} = ${result.toFixed(2)} ${to194.value} (sample rates)`;
+}
+</script>
+</body>
+</html>

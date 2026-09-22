@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Property</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .d-block { display:block; background:#dbeafe; margin-bottom:4px; }
+  .d-inline { display:inline; background:#fef9c3; }
+  .d-inline-block { display:inline-block; background:#dcfce7; width:120px; padding:6px; margin:4px; }
+  .d-none { display:none; }
+  .d-flex { display:flex; gap:8px; background:#f3f4f6; padding:8px; margin-top:8px; }
+  .d-flex div { background:#a5b4fc; padding:8px; border-radius:6px; }
+  .d-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:8px; margin-top:8px; }
+  .d-grid div { background:#fca5a5; padding:8px; text-align:center; border-radius:6px; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 13</h1><p>display: block, inline, inline-block, flex, grid, none</p></header>
+<main>
+  <div class="program-page">
+    <h1>Display Values</h1>
+    <p class="description">Demonstrates each major value of the CSS display property.</p>
+    <div class="output-box">
+      <div class="d-block">block (takes full width, own line)</div>
+      <span class="d-inline">inline</span> <span class="d-inline">stays in text flow</span>
+      <div><span class="d-inline-block">inline-block 1</span><span class="d-inline-block">inline-block 2</span></div>
+      <p>An element with <code>display:none</code> is placed right here but is invisible: <span class="d-none">You can't see me</span></p>
+      <div class="d-flex"><div>Flex 1</div><div>Flex 2</div><div>Flex 3</div></div>
+      <div class="d-grid"><div>Grid 1</div><div>Grid 2</div><div>Grid 3</div></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

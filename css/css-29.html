@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>object-fit and object-position</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .obj-demo { display:flex; gap:12px; flex-wrap:wrap; }
+  .obj-demo img { width:150px; height:150px; border-radius:8px; border:1px solid #d1d5db; }
+  .fit-cover { object-fit: cover; }
+  .fit-contain { object-fit: contain; background:#f3f4f6; }
+  .fit-fill { object-fit: fill; }
+  .pos-top { object-fit: cover; object-position: top; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 29</h1><p>object-fit and object-position Properties</p></header>
+<main>
+  <div class="program-page">
+    <h1>object-fit &amp; object-position</h1>
+    <p class="description">Controls how an image fills its box while keeping (or not) its aspect ratio, and which part of it is shown.</p>
+    <div class="output-box obj-demo">
+      <div><img class="fit-cover" src="https://placehold.co/300x150" alt="cover"><p>cover</p></div>
+      <div><img class="fit-contain" src="https://placehold.co/300x150" alt="contain"><p>contain</p></div>
+      <div><img class="fit-fill" src="https://placehold.co/300x150" alt="fill"><p>fill</p></div>
+      <div><img class="pos-top" src="https://placehold.co/300x150" alt="top position"><p>cover + position:top</p></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

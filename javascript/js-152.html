@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Current Geographical Coordinates</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 152</h1><p>Display Current Geographical Coordinates</p></header>
+<main>
+  <div class="program-page">
+    <h1>Display Current Geographical Coordinates</h1>
+    <p class="description">Repeatedly displays the user's live coordinates as they move (watchPosition).</p>
+    <div class="output-box">
+<button class="btn" onclick="run152()">Start Watching</button><div id="out152" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run152(){
+  if(!navigator.geolocation){ out152.textContent="Not supported."; return; }
+  navigator.geolocation.watchPosition(pos=>{ out152.textContent = `Lat: ${pos.coords.latitude.toFixed(5)}, Lng: ${pos.coords.longitude.toFixed(5)}`; });
+}
+</script>
+</body>
+</html>

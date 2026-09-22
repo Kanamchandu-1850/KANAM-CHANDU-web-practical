@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display the User's Screen Width and Height</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 148</h1><p>Display the User's Screen Width and Height</p></header>
+<main>
+  <div class="program-page">
+    <h1>Display the User's Screen Width and Height</h1>
+    <p class="description">Shows the device's full screen resolution.</p>
+    <div class="output-box">
+<div id="out148" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+out148.textContent = `Screen: ${screen.width} x ${screen.height}`;
+</script>
+</body>
+</html>

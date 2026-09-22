@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internal and External CSS</title>
+<link rel="stylesheet" href="../assets/style.css">
+<!-- External CSS: the site-wide stylesheet linked above -->
+<style>
+  /* Internal CSS: written directly inside this page's <style> tag */
+  .internal-demo {
+    background: #fff7ed;
+    border: 2px solid #f97316;
+    padding: 16px;
+    border-radius: 8px;
+    color: #9a3412;
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1>Program 11</h1>
+  <p>Internal and External CSS Styling</p>
+</header>
+<main>
+  <div class="program-page">
+    <h1>Internal vs External CSS</h1>
+    <p class="description">This page's overall layout comes from an <strong>external</strong> stylesheet (assets/style.css, linked via &lt;link&gt;). The orange box below is styled using <strong>internal</strong> CSS written in a &lt;style&gt; block in this file's &lt;head&gt;.</p>
+
+    <div class="output-box">
+      <div class="internal-demo">
+        This box is styled with internal CSS defined only inside this HTML file.
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Back to HTML Programs</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>

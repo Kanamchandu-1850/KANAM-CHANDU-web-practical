@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-page Form Using sessionStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 173</h1><p>Multi-page Form Using sessionStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Multi-page Form Using sessionStorage</h1>
+    <p class="description">Carries data from one form 'page' to the next using sessionStorage (simulated with two panels).</p>
+    <div class="output-box">
+<div id="page1_173"><input id="name173" placeholder="Name"><button class="btn" onclick="next173()">Next</button></div><div id="page2_173" style="display:none;"><div id="summary173"></div></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function next173(){
+  sessionStorage.setItem("formName173", name173.value);
+  document.getElementById("page1_173").style.display="none";
+  document.getElementById("page2_173").style.display="block";
+  summary173.textContent = "Step 2 — Welcome, " + sessionStorage.getItem("formName173");
+}
+</script>
+</body>
+</html>

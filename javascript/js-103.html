@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaction-time Game</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 103</h1><p>Reaction-time Game</p></header>
+<main>
+  <div class="program-page">
+    <h1>Reaction-time Game</h1>
+    <p class="description">Measures how quickly the user clicks a button after it turns green.</p>
+    <div class="output-box">
+<button class="btn" id="btn103" onclick="click103()">Wait for green...</button><div id="out103" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let start103, ready103=false;
+const b103=document.getElementById("btn103");
+function begin103(){
+  ready103=false; b103.style.background="#dc2626"; b103.textContent="Wait...";
+  const delay = 1000+Math.random()*3000;
+  setTimeout(()=>{ ready103=true; b103.style.background="#16a34a"; b103.textContent="Click now!"; start103=Date.now(); }, delay);
+}
+function click103(){
+  if(!ready103){ out103.textContent="Too soon! Try again."; return; }
+  out103.textContent = "Reaction time: " + (Date.now()-start103) + " ms";
+  b103.textContent="Wait for green..."; b103.style.background="";
+  ready103=false;
+  begin103();
+}
+begin103();
+</script>
+</body>
+</html>

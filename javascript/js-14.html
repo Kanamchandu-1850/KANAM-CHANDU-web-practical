@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sum and Average of Array Elements</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 14</h1><p>Sum and Average of Array Elements</p></header>
+<main>
+  <div class="program-page">
+    <h1>Sum and Average of Array Elements</h1>
+    <p class="description">Calculates sum and average of a numeric array.</p>
+    <div class="output-box">
+<input id="arr14" value="4,8,15,16,23"><button class="btn" onclick="run14()">Calculate</button><div id="out14" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run14(){ const a=arr14.value.split(",").map(Number); const sum=a.reduce((x,y)=>x+y,0); out14.textContent = `Sum: ${sum}, Average: ${(sum/a.length).toFixed(2)}`; }
+</script>
+</body>
+</html>

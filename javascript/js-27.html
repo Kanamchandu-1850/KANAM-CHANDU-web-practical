@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power of a Number</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 27</h1><p>Power of a Number</p></header>
+<main>
+  <div class="program-page">
+    <h1>Power of a Number</h1>
+    <p class="description">Calculates base raised to an exponent using Math.pow.</p>
+    <div class="output-box">
+<input id="b27" type="number" value="2"><input id="e27" type="number" value="10"><button class="btn" onclick="run27()">Calculate</button><div id="out27" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run27(){ out27.textContent = `${b27.value}^${e27.value} = ${Math.pow(+b27.value,+e27.value)}`; }
+</script>
+</body>
+</html>

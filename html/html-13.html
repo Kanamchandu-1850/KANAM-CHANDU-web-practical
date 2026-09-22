@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Webpage using Media Queries</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .responsive-grid div {
+    background: #e0f2fe;
+    border: 1px solid #38bdf8;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  /* Tablet */
+  @media (max-width: 768px) {
+    .responsive-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  /* Mobile */
+  @media (max-width: 480px) {
+    .responsive-grid { grid-template-columns: 1fr; }
+    .responsive-grid div { background: #fee2e2; border-color: #f87171; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1>Program 13</h1>
+  <p>Responsive Design with Media Queries</p>
+</header>
+<main>
+  <div class="program-page">
+    <h1>Responsive Layout</h1>
+    <p class="description">Resize the browser window: 3 columns on desktop, 2 on tablets (≤768px), and 1 column with a color change on mobile (≤480px).</p>
+
+    <div class="output-box">
+      <div class="responsive-grid">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+        <div>Box 5</div>
+        <div>Box 6</div>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Back to HTML Programs</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>

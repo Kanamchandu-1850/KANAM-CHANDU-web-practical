@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Portfolio Website</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 195</h1><p>Interactive Portfolio Website</p></header>
+<main>
+  <div class="program-page">
+    <h1>Interactive Portfolio Website</h1>
+    <p class="description">Links to the fuller portfolio page already built in the HTML section, plus a quick JS-powered greeting.</p>
+    <div class="output-box">
+<div id="out195" class="output-line"></div><p>See the full styled version: <a href="../html/html-15.html">Portfolio Page (HTML Program 15)</a></p>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+const hour195 = new Date().getHours();
+const greeting195 = hour195<12 ? "Good morning!" : hour195<18 ? "Good afternoon!" : "Good evening!";
+out195.textContent = greeting195 + " Welcome to my interactive portfolio.";
+</script>
+</body>
+</html>

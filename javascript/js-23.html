@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LCM of Two Numbers</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 23</h1><p>LCM of Two Numbers</p></header>
+<main>
+  <div class="program-page">
+    <h1>LCM of Two Numbers</h1>
+    <p class="description">Finds the least common multiple of two numbers.</p>
+    <div class="output-box">
+<input id="a23" type="number" value="4"><input id="b23" type="number" value="6"><button class="btn" onclick="run23()">Find LCM</button><div id="out23" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run23(){ const a=+a23.value,b=+b23.value; const gcd=(x,y)=>y?gcd(y,x%y):x; out23.textContent="LCM: "+(a*b/gcd(a,b)); }
+</script>
+</body>
+</html>

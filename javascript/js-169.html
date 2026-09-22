@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recently Viewed Items Feature</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 169</h1><p>Recently Viewed Items Feature</p></header>
+<main>
+  <div class="program-page">
+    <h1>Recently Viewed Items Feature</h1>
+    <p class="description">Tracks the last few items 'viewed' by the user using localStorage.</p>
+    <div class="output-box">
+<button class="btn" onclick="view169('Laptop')">View Laptop</button><button class="btn" onclick="view169('Phone')">View Phone</button><button class="btn" onclick="view169('Watch')">View Watch</button><ul id="recent169"></ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function view169(item){
+  let arr = JSON.parse(localStorage.getItem("recent169")||"[]");
+  arr = [item, ...arr.filter(i=>i!==item)].slice(0,5);
+  localStorage.setItem("recent169", JSON.stringify(arr));
+  render169();
+}
+function render169(){ recent169.innerHTML = JSON.parse(localStorage.getItem("recent169")||"[]").map(i=>`<li>${i}</li>`).join(""); }
+render169();
+</script>
+</body>
+</html>

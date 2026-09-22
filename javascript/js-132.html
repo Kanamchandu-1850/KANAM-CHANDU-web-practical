@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form with Validation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 132</h1><p>Contact Form with Validation</p></header>
+<main>
+  <div class="program-page">
+    <h1>Contact Form with Validation</h1>
+    <p class="description">Validates a name, email, and message before allowing submission.</p>
+    <div class="output-box">
+<form id="f132"><input id="nm132" placeholder="Name" required><input id="em132" placeholder="Email" required><textarea id="msg132" placeholder="Message" required></textarea><button class="btn" type="submit">Send</button></form><div id="out132" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+f132.addEventListener("submit", e=>{
+  e.preventDefault();
+  const ok = nm132.value.trim() && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em132.value) && msg132.value.trim();
+  out132.textContent = ok ? "Message sent!" : "Please complete all fields with a valid email.";
+});
+</script>
+</body>
+</html>

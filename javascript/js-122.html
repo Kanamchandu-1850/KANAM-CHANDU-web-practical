@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate a Form Using Regular Expressions</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 122</h1><p>Validate a Form Using Regular Expressions</p></header>
+<main>
+  <div class="program-page">
+    <h1>Validate a Form Using Regular Expressions</h1>
+    <p class="description">Validates multiple fields at once using different regex patterns.</p>
+    <div class="output-box">
+<input id="nm122" placeholder="Name (letters only)"><input id="ph122" placeholder="Phone (10 digits)"><button class="btn" onclick="run122()">Validate</button><div id="out122" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run122(){
+  const nameOk=/^[A-Za-z\s]+$/.test(nm122.value);
+  const phoneOk=/^\d{10}$/.test(ph122.value);
+  out122.textContent = `Name valid: ${nameOk}\nPhone valid: ${phoneOk}`;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Expense Tracker</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 188</h1><p>Simple Expense Tracker</p></header>
+<main>
+  <div class="program-page">
+    <h1>Simple Expense Tracker</h1>
+    <p class="description">Adds income/expense entries and shows a running balance.</p>
+    <div class="output-box">
+<input id="desc188" placeholder="Description"><input id="amt188" type="number" placeholder="Amount (+/-)"><button class="btn" onclick="add188()">Add</button><ul id="list188"></ul><div id="bal188" class="output-line">Balance: 0</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let entries188=[];
+function add188(){
+  entries188.push({d:desc188.value, a:+amt188.value});
+  render188(); desc188.value=""; amt188.value="";
+}
+function render188(){
+  list188.innerHTML = entries188.map(e=>`<li>${e.d}: ${e.a>=0?"+":""}${e.a}</li>`).join("");
+  bal188.textContent = "Balance: " + entries188.reduce((s,e)=>s+e.a,0);
+}
+</script>
+</body>
+</html>

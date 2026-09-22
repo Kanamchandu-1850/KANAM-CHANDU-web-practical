@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form Validation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 104</h1><p>Student Registration Form Validation</p></header>
+<main>
+  <div class="program-page">
+    <h1>Student Registration Form Validation</h1>
+    <p class="description">Validates that name and email fields are filled before allowing submission.</p>
+    <div class="output-box">
+<form id="f104"><input id="name104" placeholder="Name"><input id="email104" placeholder="Email"><button class="btn" type="submit">Register</button></form><div id="out104" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+f104.addEventListener("submit", e=>{
+  e.preventDefault();
+  if(!name104.value || !email104.value){ out104.textContent="Please fill all fields."; return; }
+  out104.textContent = "Registered: " + name104.value;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMI Calculator</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 193</h1><p>BMI Calculator</p></header>
+<main>
+  <div class="program-page">
+    <h1>BMI Calculator</h1>
+    <p class="description">Calculates Body Mass Index from height and weight, with a category label.</p>
+    <div class="output-box">
+<input id="h193" type="number" placeholder="Height (cm)"><input id="w193" type="number" placeholder="Weight (kg)"><button class="btn" onclick="run193()">Calculate BMI</button><div id="out193" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run193(){
+  const h=(+h193.value)/100, w=+w193.value;
+  const bmi = w/(h*h);
+  let cat = bmi<18.5?"Underweight":bmi<25?"Normal":bmi<30?"Overweight":"Obese";
+  out193.textContent = `BMI: ${bmi.toFixed(1)} (${cat})`;
+}
+</script>
+</body>
+</html>

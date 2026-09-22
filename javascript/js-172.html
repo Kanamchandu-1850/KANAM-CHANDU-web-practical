@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store Temporary Form Data Using sessionStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 172</h1><p>Store Temporary Form Data Using sessionStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Store Temporary Form Data Using sessionStorage</h1>
+    <p class="description">Saves in-progress form input for the current tab session only.</p>
+    <div class="output-box">
+<input id="draft172" placeholder="Type a draft message..." oninput="sessionStorage.setItem('draft172', this.value)">
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+draft172.value = sessionStorage.getItem("draft172") || "";
+</script>
+</body>
+</html>

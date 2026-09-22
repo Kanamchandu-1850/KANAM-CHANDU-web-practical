@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List Using localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 163</h1><p>To-Do List Using localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>To-Do List Using localStorage</h1>
+    <p class="description">A to-do list that persists items across page reloads.</p>
+    <div class="output-box">
+<input id="task163" placeholder="New task"><button class="btn" onclick="add163()">Add</button><ul id="list163"></ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function getTodos163(){ return JSON.parse(localStorage.getItem("todos163")||"[]"); }
+function render163(){ list163.innerHTML = getTodos163().map(t=>`<li>${t}</li>`).join(""); }
+function add163(){ if(!task163.value) return; const arr=getTodos163(); arr.push(task163.value); localStorage.setItem("todos163", JSON.stringify(arr)); task163.value=""; render163(); }
+render163();
+</script>
+</body>
+</html>

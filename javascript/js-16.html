@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arrow Functions</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 16</h1><p>Arrow Functions</p></header>
+<main>
+  <div class="program-page">
+    <h1>Arrow Functions</h1>
+    <p class="description">Demonstrates ES6 arrow function syntax.</p>
+    <div class="output-box">
+<input id="n16" type="number" value="6"><button class="btn" onclick="run16()">Cube It</button><div id="out16" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+const cube = x => x*x*x;
+function run16(){ out16.textContent = "Cube: " + cube(+n16.value); }
+</script>
+</body>
+</html>

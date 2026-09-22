@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Perfect Number</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 25</h1><p>Check Perfect Number</p></header>
+<main>
+  <div class="program-page">
+    <h1>Check Perfect Number</h1>
+    <p class="description">Checks whether a number equals the sum of its proper divisors.</p>
+    <div class="output-box">
+<input id="n25" type="number" value="28"><button class="btn" onclick="run25()">Check</button><div id="out25" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run25(){
+  const n=+n25.value; let sum=0;
+  for(let i=1;i<n;i++) if(n%i===0) sum+=i;
+  out25.textContent = n + (sum===n ? " is a Perfect number" : " is not a Perfect number");
+}
+</script>
+</body>
+</html>

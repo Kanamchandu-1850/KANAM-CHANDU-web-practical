@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store a JavaScript Object in localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 161</h1><p>Store a JavaScript Object in localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Store a JavaScript Object in localStorage</h1>
+    <p class="description">Serializes an object with JSON.stringify and reads it back with JSON.parse.</p>
+    <div class="output-box">
+<button class="btn" onclick="run161()">Save &amp; Load Object</button><div id="out161" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run161(){
+  const student = { name:"Priya", age:21 };
+  localStorage.setItem("student", JSON.stringify(student));
+  const loaded = JSON.parse(localStorage.getItem("student"));
+  out161.textContent = `Loaded: ${loaded.name}, age ${loaded.age}`;
+}
+</script>
+</body>
+</html>

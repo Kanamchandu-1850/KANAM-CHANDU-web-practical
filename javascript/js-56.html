@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a Dynamic Table Using JavaScript</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 56</h1><p>Create a Dynamic Table Using JavaScript</p></header>
+<main>
+  <div class="program-page">
+    <h1>Create a Dynamic Table Using JavaScript</h1>
+    <p class="description">Builds an HTML table entirely from a JS array of data.</p>
+    <div class="output-box">
+<div id="tblWrap56"></div><button class="btn" onclick="run56()">Build Table</button>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run56(){
+  const data=[["Arun",88],["Priya",95],["Kiran",76]];
+  let html="<table class='demo-table'><tr><th>Name</th><th>Marks</th></tr>";
+  data.forEach(r=>html+=`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`);
+  html+="</table>";
+  tblWrap56.innerHTML = html;
+}
+</script>
+</body>
+</html>

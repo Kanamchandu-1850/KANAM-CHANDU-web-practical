@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>em, rem, vw, vh &amp; Percentage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  html { font-size: 16px; }
+  .u-em { font-size: 1.5em; }         /* relative to parent font-size */
+  .u-rem { font-size: 1.5rem; }       /* relative to root font-size */
+  .u-vw { font-size: 4vw; }
+  .u-vh-box { height: 10vh; background:#e0e7ff; }
+  .u-pct { font-size: 150%; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 28</h1><p>em, rem, vw, vh &amp; Percentage Units</p></header>
+<main>
+  <div class="program-page">
+    <h1>CSS Unit Comparison</h1>
+    <p class="description">em is relative to the parent's font-size, rem to the root's, vw/vh to the viewport, and % to the parent value.</p>
+    <div class="output-box">
+      <p class="u-em">1.5em text (relative to parent font-size)</p>
+      <p class="u-rem">1.5rem text (relative to root/html font-size)</p>
+      <p class="u-vw">4vw text (scales with viewport width — resize window to see it change)</p>
+      <div class="u-vh-box">10vh tall box (10% of viewport height)</div>
+      <p class="u-pct">150% text (relative to parent's computed font-size)</p>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

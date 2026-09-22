@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Window Object</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 134</h1><p>The Window Object</p></header>
+<main>
+  <div class="program-page">
+    <h1>The Window Object</h1>
+    <p class="description">Displays properties of the global window object.</p>
+    <div class="output-box">
+<button class="btn" onclick="run134()">Show Window Info</button><div id="out134" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run134(){ out134.textContent = `Inner size: ${window.innerWidth} x ${window.innerHeight}`; }
+</script>
+</body>
+</html>

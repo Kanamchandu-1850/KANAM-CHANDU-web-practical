@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Required-field Validation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 118</h1><p>Required-field Validation</p></header>
+<main>
+  <div class="program-page">
+    <h1>Required-field Validation</h1>
+    <p class="description">Checks that every required input in a form has a value.</p>
+    <div class="output-box">
+<form id="f118"><input required placeholder="Name"><input required placeholder="Email"><button class="btn" type="submit">Submit</button></form><div id="out118" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+f118.addEventListener("submit", e=>{
+  e.preventDefault();
+  const empty = Array.from(f118.querySelectorAll("[required]")).some(i=>!i.value.trim());
+  out118.textContent = empty ? "Please fill all required fields." : "All required fields filled!";
+});
+</script>
+</body>
+</html>

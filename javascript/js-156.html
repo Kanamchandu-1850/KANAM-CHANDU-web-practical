@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Data Stored in localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 156</h1><p>Update Data Stored in localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Update Data Stored in localStorage</h1>
+    <p class="description">Overwrites an existing localStorage value with a new one.</p>
+    <div class="output-box">
+<input id="u156" placeholder="New username"><button class="btn" onclick="run156()">Update</button><div id="out156" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run156(){ localStorage.setItem("username", u156.value); out156.textContent="Updated to: "+u156.value; }
+</script>
+</body>
+</html>

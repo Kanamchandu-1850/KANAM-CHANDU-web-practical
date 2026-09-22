@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inheritance in JavaScript</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 44</h1><p>Inheritance in JavaScript</p></header>
+<main>
+  <div class="program-page">
+    <h1>Inheritance in JavaScript</h1>
+    <p class="description">Demonstrates class inheritance using extends and super.</p>
+    <div class="output-box">
+<button class="btn" onclick="run44()">Run</button><div id="out44" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+class Animal { speak(){ return "Some generic sound"; } }
+class Dog extends Animal { speak(){ return super.speak() + " -> Woof!"; } }
+function run44(){ out44.textContent = new Dog().speak(); }
+</script>
+</body>
+</html>

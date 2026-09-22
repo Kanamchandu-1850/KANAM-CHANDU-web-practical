@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slideshow/Carousel</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 63</h1><p>Image Slideshow/Carousel</p></header>
+<main>
+  <div class="program-page">
+    <h1>Image Slideshow/Carousel</h1>
+    <p class="description">A simple JavaScript-powered image slideshow with next/prev buttons.</p>
+    <div class="output-box">
+<img id="slide63" src="https://placehold.co/300x180/6366f1/fff?text=Slide+1" width="300"><br><button class="btn" onclick="change63(-1)">Prev</button><button class="btn" onclick="change63(1)">Next</button>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let idx63=1;
+function change63(dir){ idx63 = ((idx63-1+dir+3)%3)+1; slide63.src = `https://placehold.co/300x180/6366f1/fff?text=Slide+${idx63}`; }
+</script>
+</body>
+</html>

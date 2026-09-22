@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Transitions</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .trans-box {
+    width: 120px; height: 60px; background:#6366f1; color:#fff;
+    display:flex; align-items:center; justify-content:center; border-radius:8px;
+    transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .trans-box:hover {
+    background-color:#dc2626;
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 31</h1><p>Transitions for Colors, Sizes, Shadows &amp; Positions</p></header>
+<main>
+  <div class="program-page">
+    <h1>CSS Transitions</h1>
+    <p class="description">Hover the box to see its background, scale, and shadow animate smoothly instead of changing instantly.</p>
+    <div class="output-box">
+      <div class="trans-box">Hover Me</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

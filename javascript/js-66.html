@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabs Interface Using DOM Manipulation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 66</h1><p>Tabs Interface Using DOM Manipulation</p></header>
+<main>
+  <div class="program-page">
+    <h1>Tabs Interface Using DOM Manipulation</h1>
+    <p class="description">Switches between tab panels by toggling display via JavaScript.</p>
+    <div class="output-box">
+<div><button class="btn" onclick="showTab66(1)">Tab 1</button><button class="btn" onclick="showTab66(2)">Tab 2</button></div><div id="tab66-1" style="margin-top:10px;">Content of Tab 1</div><div id="tab66-2" style="display:none; margin-top:10px;">Content of Tab 2</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function showTab66(n){ document.getElementById("tab66-1").style.display = n===1?"block":"none"; document.getElementById("tab66-2").style.display = n===2?"block":"none"; }
+</script>
+</body>
+</html>

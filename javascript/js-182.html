@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 182</h1><p>Countdown Timer</p></header>
+<main>
+  <div class="program-page">
+    <h1>Countdown Timer</h1>
+    <p class="description">A configurable countdown timer that counts down to zero and alerts.</p>
+    <div class="output-box">
+<input id="mins182" type="number" value="1" style="width:60px;"> minutes <button class="btn" onclick="start182()">Start</button><div id="disp182" style="font-size:1.8rem; text-align:center; margin-top:10px;">00:00</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let iv182;
+function render182(t){ const m=String(Math.floor(t/60)).padStart(2,"0"); const s=String(t%60).padStart(2,"0"); disp182.textContent=`${m}:${s}`; }
+function start182(){
+  let t=Math.max(1,+mins182.value)*60; clearInterval(iv182); render182(t);
+  iv182=setInterval(()=>{ t--; render182(t); if(t<=0){ clearInterval(iv182); disp182.textContent="Time's up!"; } },1000);
+}
+</script>
+</body>
+</html>

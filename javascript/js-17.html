@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>String Methods</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 17</h1><p>String Methods</p></header>
+<main>
+  <div class="program-page">
+    <h1>String Methods</h1>
+    <p class="description">Demonstrates common string methods: toUpperCase, slice, includes, trim.</p>
+    <div class="output-box">
+<input id="s17" value="  Hello JavaScript  "><button class="btn" onclick="run17()">Run</button><div id="out17" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run17(){
+  const s = s17.value;
+  out17.textContent = `Upper: ${s.toUpperCase()}\nTrimmed: "${s.trim()}"\nSlice(0,5): ${s.trim().slice(0,5)}\nIncludes "Java": ${s.includes("Java")}`;
+}
+</script>
+</body>
+</html>

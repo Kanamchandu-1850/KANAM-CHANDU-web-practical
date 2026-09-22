@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Largest and Smallest in Array</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 12</h1><p>Largest and Smallest in Array</p></header>
+<main>
+  <div class="program-page">
+    <h1>Largest and Smallest in Array</h1>
+    <p class="description">Finds the max and min values of an array.</p>
+    <div class="output-box">
+<input id="arr12" value="5,2,9,1,7"><button class="btn" onclick="run12()">Find</button><div id="out12" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run12(){ const a=arr12.value.split(",").map(Number); out12.textContent = `Largest: ${Math.max(...a)}, Smallest: ${Math.min(...a)}`; }
+</script>
+</body>
+</html>

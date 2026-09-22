@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Preference System Using localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 166</h1><p>Login Preference System Using localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Login Preference System Using localStorage</h1>
+    <p class="description">Remembers a 'Remember Me' checkbox choice across visits.</p>
+    <div class="output-box">
+<label><input type="checkbox" id="rem166" onchange="localStorage.setItem('remember166', this.checked)"> Remember Me</label><div id="out166" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+rem166.checked = localStorage.getItem("remember166")==="true"; out166.textContent = "Remember me is currently: " + rem166.checked;
+</script>
+</body>
+</html>

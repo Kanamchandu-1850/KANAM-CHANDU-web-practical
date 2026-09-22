@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Double-click Counter</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 102</h1><p>Double-click Counter</p></header>
+<main>
+  <div class="program-page">
+    <h1>Double-click Counter</h1>
+    <p class="description">Counts how many times a button has been double-clicked.</p>
+    <div class="output-box">
+<button class="btn" ondblclick="run102()">Double-click Me</button><div id="out102" class="output-line">Double-clicks: 0</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let n102=0; function run102(){ n102++; out102.textContent = "Double-clicks: " + n102; }
+</script>
+</body>
+</html>

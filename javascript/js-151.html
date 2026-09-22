@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browser Geolocation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 151</h1><p>Browser Geolocation</p></header>
+<main>
+  <div class="program-page">
+    <h1>Browser Geolocation</h1>
+    <p class="description">Requests the user's current location using the Geolocation API.</p>
+    <div class="output-box">
+<button class="btn" onclick="run151()">Get My Location</button><div id="out151" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run151(){
+  if(!navigator.geolocation){ out151.textContent="Geolocation not supported."; return; }
+  navigator.geolocation.getCurrentPosition(
+    pos=>{ out151.textContent = `Lat: ${pos.coords.latitude.toFixed(4)}, Lng: ${pos.coords.longitude.toFixed(4)}`; },
+    err=>{ out151.textContent = "Permission denied or unavailable."; }
+  );
+}
+</script>
+</body>
+</html>

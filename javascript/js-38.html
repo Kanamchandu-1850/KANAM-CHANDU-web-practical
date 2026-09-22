@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequency of Characters in a String</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 38</h1><p>Frequency of Characters in a String</p></header>
+<main>
+  <div class="program-page">
+    <h1>Frequency of Characters in a String</h1>
+    <p class="description">Counts how many times each character appears in a string.</p>
+    <div class="output-box">
+<input id="s38" value="banana"><button class="btn" onclick="run38()">Count</button><div id="out38" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run38(){
+  const s=s38.value; const freq={};
+  for(const c of s) freq[c]=(freq[c]||0)+1;
+  out38.textContent = Object.entries(freq).map(([k,v])=>`'${k}': ${v}`).join("\n");
+}
+</script>
+</body>
+</html>

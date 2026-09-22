@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>z-index and Stacking Order</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .stack-wrap { position: relative; height: 140px; }
+  .stack-box { position: absolute; width:120px; height:80px; border-radius:8px; color:#fff; display:flex; align-items:center; justify-content:center; }
+  .z1 { background:#6366f1; top:10px; left:10px; z-index:1; }
+  .z2 { background:#f59e0b; top:35px; left:60px; z-index:3; }
+  .z3 { background:#dc2626; top:60px; left:110px; z-index:2; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 22</h1><p>z-index and CSS Stacking Order</p></header>
+<main>
+  <div class="program-page">
+    <h1>Stacking with z-index</h1>
+    <p class="description">Three overlapping boxes with different z-index values — higher z-index appears on top regardless of source order.</p>
+    <div class="output-box">
+      <div class="stack-wrap">
+        <div class="stack-box z1">z-index:1</div>
+        <div class="stack-box z2">z-index:3</div>
+        <div class="stack-box z3">z-index:2</div>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

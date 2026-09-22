@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Multiple Elements Simultaneously</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 52</h1><p>Change Multiple Elements Simultaneously</p></header>
+<main>
+  <div class="program-page">
+    <h1>Change Multiple Elements Simultaneously</h1>
+    <p class="description">Changes the styles of several elements at once using querySelectorAll.</p>
+    <div class="output-box">
+<p class="multi52">One</p><p class="multi52">Two</p><p class="multi52">Three</p><button class="btn" onclick="run52()">Highlight All</button>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run52(){ document.querySelectorAll(".multi52").forEach(el=>{ el.style.background="#dcfce7"; el.style.fontWeight="bold"; }); }
+</script>
+</body>
+</html>

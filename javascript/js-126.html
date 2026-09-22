@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real-time Form Validation System</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 126</h1><p>Real-time Form Validation System</p></header>
+<main>
+  <div class="program-page">
+    <h1>Real-time Form Validation System</h1>
+    <p class="description">Validates an email field live as the user types, without waiting for submit.</p>
+    <div class="output-box">
+<input id="em126" placeholder="Type your email..."><span id="live126" style="font-size:0.85rem;"></span>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+em126.addEventListener("input", ()=>{
+  const ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em126.value);
+  live126.textContent = em126.value ? (ok?"✔ looks good":"✕ invalid format") : "";
+  live126.style.color = ok ? "#16a34a" : "#dc2626";
+});
+</script>
+</body>
+</html>

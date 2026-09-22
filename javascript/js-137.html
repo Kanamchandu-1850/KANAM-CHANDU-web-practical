@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>setInterval()</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 137</h1><p>setInterval()</p></header>
+<main>
+  <div class="program-page">
+    <h1>setInterval()</h1>
+    <p class="description">Runs a function repeatedly at a fixed interval.</p>
+    <div class="output-box">
+<button class="btn" onclick="run137()">Start Counter</button><button class="btn" onclick="clearInterval(iv137)">Stop</button><div id="out137" class="output-line">0</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+let iv137, n137=0; function run137(){ n137=0; clearInterval(iv137); iv137=setInterval(()=>{ n137++; out137.textContent=n137; }, 1000); }
+</script>
+</body>
+</html>

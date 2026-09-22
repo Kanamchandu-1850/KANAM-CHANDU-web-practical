@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Sidebar Navigation Drawer</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .drawer-wrap { position:relative; height:260px; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; background:#f9fafb; }
+  .drawer { position:absolute; top:0; left:-200px; width:200px; height:100%; background:#111827; color:#fff; padding:16px; transition: left 0.3s ease; }
+  .drawer-toggle:checked ~ .drawer { left:0; }
+  .drawer label.btn { position:absolute; top:10px; left:10px; z-index:2; cursor:pointer; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 39</h1><p>Mobile Sidebar Navigation Drawer</p></header>
+<main>
+  <div class="program-page">
+    <h1>Slide-in Drawer Menu</h1>
+    <p class="description">A checkbox-driven CSS-only drawer that slides in from the left when toggled — common on mobile SaaS layouts.</p>
+    <div class="output-box">
+      <div class="drawer-wrap">
+        <input type="checkbox" id="drawerToggle" class="drawer-toggle" style="position:absolute; top:10px; left:10px; z-index:3; width:20px; height:20px;">
+        <label for="drawerToggle" style="position:absolute; top:12px; left:36px; font-weight:600;">☰ Toggle Menu</label>
+        <div class="drawer">
+          <h3>Menu</h3>
+          <p>Dashboard</p><p>Reports</p><p>Settings</p>
+        </div>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

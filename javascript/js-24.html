@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Armstrong Number</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 24</h1><p>Check Armstrong Number</p></header>
+<main>
+  <div class="program-page">
+    <h1>Check Armstrong Number</h1>
+    <p class="description">Checks whether a number equals the sum of its own digits each raised to the power of the digit count.</p>
+    <div class="output-box">
+<input id="n24" type="number" value="153"><button class="btn" onclick="run24()">Check</button><div id="out24" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run24(){
+  const s=n24.value, len=s.length;
+  const sum=s.split("").reduce((a,d)=>a+Math.pow(Number(d),len),0);
+  out24.textContent = s + (sum==Number(s) ? " is an Armstrong number" : " is not an Armstrong number");
+}
+</script>
+</body>
+</html>

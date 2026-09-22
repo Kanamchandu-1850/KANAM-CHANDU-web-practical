@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagination Component</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .pagination { display:flex; gap:6px; list-style:none; padding:0; }
+  .pagination a { padding:8px 14px; border:1px solid #e5e7eb; border-radius:6px; text-decoration:none; color:#374151; }
+  .pagination a.active { background:#6366f1; color:#fff; border-color:#6366f1; }
+  .pagination a:hover:not(.active) { background:#f3f4f6; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 45</h1><p>Pagination Component</p></header>
+<main>
+  <div class="program-page">
+    <h1>Pagination</h1>
+    <p class="description">A row of page-number links, commonly used below tables and search results.</p>
+    <div class="output-box">
+      <ul class="pagination">
+        <li><a href="#">«</a></li>
+        <li><a href="#" class="active">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">»</a></li>
+      </ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store and Retrieve Data Using localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 48</h1><p>Store and Retrieve Data Using localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Store and Retrieve Data Using localStorage</h1>
+    <p class="description">A basic introduction to saving and reading a value with localStorage.</p>
+    <div class="output-box">
+<input id="v48" placeholder="Enter a value"><button class="btn" onclick="save48()">Save</button><button class="btn" onclick="load48()">Load</button><div id="out48" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function save48(){ localStorage.setItem("demoValue", v48.value); out48.textContent = "Saved!"; }
+function load48(){ out48.textContent = "Stored value: " + (localStorage.getItem("demoValue") || "(nothing saved yet)"); }
+</script>
+</body>
+</html>

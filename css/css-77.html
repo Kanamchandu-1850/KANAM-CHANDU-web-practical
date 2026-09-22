@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skeleton-loading Component</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .skeleton { background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%); background-size: 200% 100%; animation: shimmer 1.4s infinite; border-radius:6px; }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+  .sk-line { height:14px; margin-bottom:8px; }
+  .sk-avatar { width:50px; height:50px; border-radius:50%; }
+  .sk-row { display:flex; gap:12px; align-items:center; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 77</h1><p>Skeleton-loading Component</p></header>
+<main>
+  <div class="program-page">
+    <h1>Skeleton Loader</h1>
+    <p class="description">Placeholder shapes that mimic the final layout while real content is still loading — smoother than a spinner for lists/cards.</p>
+    <div class="output-box" style="max-width:320px;">
+      <div class="sk-row">
+        <div class="skeleton sk-avatar"></div>
+        <div style="flex:1;">
+          <div class="skeleton sk-line" style="width:70%;"></div>
+          <div class="skeleton sk-line" style="width:40%;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

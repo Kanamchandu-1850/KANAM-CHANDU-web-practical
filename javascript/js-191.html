@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes Application Using localStorage</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 191</h1><p>Notes Application Using localStorage</p></header>
+<main>
+  <div class="program-page">
+    <h1>Notes Application Using localStorage</h1>
+    <p class="description">A mini notes app: add, view, and delete saved notes.</p>
+    <div class="output-box">
+<input id="ntitle191" placeholder="Note text"><button class="btn" onclick="add191()">Add Note</button><ul id="list191"></ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function getNotes191(){ return JSON.parse(localStorage.getItem("miniNotes191")||"[]"); }
+function render191(){
+  list191.innerHTML="";
+  getNotes191().forEach((n,i)=>{
+    const li=document.createElement("li");
+    li.textContent=n+" ";
+    const del=document.createElement("button"); del.textContent="✕";
+    del.onclick=()=>{ const a=getNotes191(); a.splice(i,1); localStorage.setItem("miniNotes191", JSON.stringify(a)); render191(); };
+    li.appendChild(del);
+    list191.appendChild(li);
+  });
+}
+function add191(){ if(!ntitle191.value) return; const a=getNotes191(); a.push(ntitle191.value); localStorage.setItem("miniNotes191", JSON.stringify(a)); ntitle191.value=""; render191(); }
+render191();
+</script>
+</body>
+</html>

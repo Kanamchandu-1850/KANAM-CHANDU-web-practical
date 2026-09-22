@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Largest Element in Array</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 29</h1><p>Second Largest Element in Array</p></header>
+<main>
+  <div class="program-page">
+    <h1>Second Largest Element in Array</h1>
+    <p class="description">Finds the second-largest value in an array.</p>
+    <div class="output-box">
+<input id="arr29" value="12,45,2,41,31"><button class="btn" onclick="run29()">Find</button><div id="out29" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run29(){ const a=[...new Set(arr29.value.split(",").map(Number))].sort((x,y)=>y-x); out29.textContent = "Second largest: " + a[1]; }
+</script>
+</body>
+</html>

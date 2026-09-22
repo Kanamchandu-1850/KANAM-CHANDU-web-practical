@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Checkbox Selection</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 115</h1><p>Validate Checkbox Selection</p></header>
+<main>
+  <div class="program-page">
+    <h1>Validate Checkbox Selection</h1>
+    <p class="description">Ensures a required checkbox (e.g. Terms) is checked.</p>
+    <div class="output-box">
+<label><input type="checkbox" id="tc115"> I agree to terms</label><button class="btn" onclick="run115()">Validate</button><div id="out115" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run115(){ out115.textContent = tc115.checked ? "Terms accepted" : "You must accept the terms"; }
+</script>
+</body>
+</html>

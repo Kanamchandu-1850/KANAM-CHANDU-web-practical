@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remove HTML Elements Dynamically</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 50</h1><p>Remove HTML Elements Dynamically</p></header>
+<main>
+  <div class="program-page">
+    <h1>Remove HTML Elements Dynamically</h1>
+    <p class="description">Removes the last list item from the page.</p>
+    <div class="output-box">
+<ul id="list50"><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul><button class="btn" onclick="run50()">Remove Last</button>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run50(){ if(list50.lastElementChild) list50.removeChild(list50.lastElementChild); }
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Bubbling</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 96</h1><p>Event Bubbling</p></header>
+<main>
+  <div class="program-page">
+    <h1>Event Bubbling</h1>
+    <p class="description">Demonstrates how a click event bubbles up from child to parent.</p>
+    <div class="output-box">
+<div class="nest-wrap">
+  <div id="outer96" class="nest-outer">Outer
+    <div id="inner96" class="nest-inner">Inner (click me)</div>
+  </div>
+</div>
+<div id="out96" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+document.getElementById("outer96").addEventListener("click", ()=>{ out96.textContent += "\nOuter div clicked (bubbled)"; });
+document.getElementById("inner96").addEventListener("click", ()=>{ out96.textContent = "Inner div clicked"; });
+</script>
+</body>
+</html>

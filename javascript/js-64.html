@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Word Counter</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 64</h1><p>Live Word Counter</p></header>
+<main>
+  <div class="program-page">
+    <h1>Live Word Counter</h1>
+    <p class="description">Counts words live as the user types in a textarea.</p>
+    <div class="output-box">
+<textarea id="ta64" rows="3" placeholder="Start typing..."></textarea><div id="out64" class="output-line">0 words</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+ta64.addEventListener("input", ()=>{ const words = ta64.value.trim()===""?0:ta64.value.trim().split(/\s+/).length; out64.textContent = words + " words"; });
+</script>
+</body>
+</html>

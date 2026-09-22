@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visibility and Opacity</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .visible { background:#dcfce7; padding:8px; margin-bottom:6px; }
+  .hidden { visibility: hidden; background:#fee2e2; padding:8px; margin-bottom:6px; }
+  .op1 { opacity: 1; background:#6366f1; color:#fff; padding:8px; margin-bottom:4px; }
+  .op2 { opacity: 0.5; background:#6366f1; color:#fff; padding:8px; margin-bottom:4px; }
+  .op3 { opacity: 0.2; background:#6366f1; color:#fff; padding:8px; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 14</h1><p>visibility and opacity Properties</p></header>
+<main>
+  <div class="program-page">
+    <h1>Visibility vs Opacity</h1>
+    <p class="description"><code>visibility:hidden</code> hides an element but still reserves its space. <code>opacity</code> fades an element while keeping it fully interactive and in the flow.</p>
+    <div class="output-box">
+      <div class="visible">This box is visible normally.</div>
+      <div class="hidden">This box has visibility:hidden — its space is still reserved even though it's invisible.</div>
+      <div class="op1">opacity: 1 (fully opaque)</div>
+      <div class="op2">opacity: 0.5 (semi-transparent)</div>
+      <div class="op3">opacity: 0.2 (mostly transparent)</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

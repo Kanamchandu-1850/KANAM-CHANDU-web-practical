@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List Using DOM Manipulation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 71</h1><p>To-Do List Using DOM Manipulation</p></header>
+<main>
+  <div class="program-page">
+    <h1>To-Do List Using DOM Manipulation</h1>
+    <p class="description">A basic to-do list: add items and mark as done by clicking.</p>
+    <div class="output-box">
+<input id="todoInput71" placeholder="New task..."><button class="btn" onclick="addTodo71()">Add</button><ul id="todoList71"></ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function addTodo71(){
+  if(!todoInput71.value.trim()) return;
+  const li=document.createElement("li");
+  li.textContent = todoInput71.value;
+  li.style.cursor="pointer";
+  li.onclick = ()=>li.style.textDecoration = li.style.textDecoration==="line-through"?"none":"line-through";
+  todoList71.appendChild(li);
+  todoInput71.value="";
+}
+</script>
+</body>
+</html>

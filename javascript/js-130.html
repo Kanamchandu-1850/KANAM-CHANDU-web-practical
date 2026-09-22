@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Admission Form with Complete Validation</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 130</h1><p>College Admission Form with Complete Validation</p></header>
+<main>
+  <div class="program-page">
+    <h1>College Admission Form with Complete Validation</h1>
+    <p class="description">Validates multiple fields together for a college admission form.</p>
+    <div class="output-box">
+<form id="f130"><input id="nm130" placeholder="Full Name" required><input id="em130" placeholder="Email" required><input id="ph130" placeholder="Phone" required><button class="btn" type="submit">Apply</button></form><div id="out130" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+f130.addEventListener("submit", e=>{
+  e.preventDefault();
+  const nameOk=/^[A-Za-z\s]+$/.test(nm130.value);
+  const emailOk=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em130.value);
+  const phoneOk=/^\d{10}$/.test(ph130.value);
+  out130.textContent = (nameOk&&emailOk&&phoneOk) ? "Application submitted!" : "Please correct the highlighted fields.";
+});
+</script>
+</body>
+</html>

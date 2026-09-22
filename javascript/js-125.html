@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate a Password Using a Regular Expression</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 125</h1><p>Validate a Password Using a Regular Expression</p></header>
+<main>
+  <div class="program-page">
+    <h1>Validate a Password Using a Regular Expression</h1>
+    <p class="description">Validates a password requires letters and numbers, min 8 chars, via one regex.</p>
+    <div class="output-box">
+<input id="pw125" type="password" placeholder="Password"><button class="btn" onclick="run125()">Validate</button><div id="out125" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run125(){ out125.textContent = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(pw125.value) ? "Valid password" : "Needs letters + numbers, 8+ chars"; }
+</script>
+</body>
+</html>

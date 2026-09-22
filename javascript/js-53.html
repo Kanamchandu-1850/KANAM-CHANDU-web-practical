@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>getElementById and getElementsByClassName</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 53</h1><p>getElementById and getElementsByClassName</p></header>
+<main>
+  <div class="program-page">
+    <h1>getElementById and getElementsByClassName</h1>
+    <p class="description">Demonstrates two classic DOM selection methods.</p>
+    <div class="output-box">
+<p id="idDemo53">By ID</p><p class="classDemo53">By Class A</p><p class="classDemo53">By Class B</p><button class="btn" onclick="run53()">Select &amp; Highlight</button>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run53(){ document.getElementById("idDemo53").style.color="#2563eb"; const els=document.getElementsByClassName("classDemo53"); for(const e of els) e.style.color="#16a34a"; }
+</script>
+</body>
+</html>

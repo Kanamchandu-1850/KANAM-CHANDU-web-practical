@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Even or Odd</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 4</h1><p>Check Even or Odd</p></header>
+<main>
+  <div class="program-page">
+    <h1>Check Even or Odd</h1>
+    <p class="description">Checks whether a number is even or odd using the modulus operator.</p>
+    <div class="output-box">
+<input id="n4" type="number" value="7"><button class="btn" onclick="run4()">Check</button><div id="out4" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run4(){ const n=+n4.value; out4.textContent = n + " is " + (n%2===0 ? "Even" : "Odd"); }
+</script>
+</body>
+</html>

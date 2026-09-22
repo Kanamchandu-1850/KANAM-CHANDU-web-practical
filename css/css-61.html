@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Badges, Labels, Tags &amp; Chips</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .badge-row { display:flex; gap:8px; flex-wrap:wrap; }
+  .badge { padding:4px 10px; border-radius:6px; font-size:0.8rem; font-weight:600; }
+  .badge-green { background:#dcfce7; color:#166534; }
+  .badge-red { background:#fee2e2; color:#991b1b; }
+  .badge-blue { background:#dbeafe; color:#1e40af; }
+  .tag { background:#f3f4f6; padding:4px 10px; border-radius:999px; font-size:0.8rem; }
+  .chip { display:inline-flex; align-items:center; gap:6px; background:#eef2ff; padding:4px 10px; border-radius:999px; font-size:0.8rem; }
+  .chip button { border:none; background:none; cursor:pointer; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 61</h1><p>Badges, Labels, Tags &amp; Chips</p></header>
+<main>
+  <div class="program-page">
+    <h1>Small Status Indicators</h1>
+    <p class="description">Badges show status, tags categorize content, and chips are removable filter/selection pills.</p>
+    <div class="output-box badge-row">
+      <span class="badge badge-green">Active</span>
+      <span class="badge badge-red">Failed</span>
+      <span class="badge badge-blue">In Review</span>
+      <span class="tag">#design</span>
+      <span class="chip">React <button>✕</button></span>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

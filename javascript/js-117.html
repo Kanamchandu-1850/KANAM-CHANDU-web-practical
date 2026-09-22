@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate a Textarea</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 117</h1><p>Validate a Textarea</p></header>
+<main>
+  <div class="program-page">
+    <h1>Validate a Textarea</h1>
+    <p class="description">Ensures a textarea isn't left empty before submission.</p>
+    <div class="output-box">
+<textarea id="ta117" rows="3" placeholder="Write your feedback"></textarea><button class="btn" onclick="run117()">Validate</button><div id="out117" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run117(){ out117.textContent = ta117.value.trim() ? "Feedback received" : "Feedback cannot be empty"; }
+</script>
+</body>
+</html>

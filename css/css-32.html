@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2D Transforms</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .t-grid { display:flex; gap:24px; flex-wrap:wrap; padding: 20px 0; }
+  .t-box { width:80px; height:80px; background:#16a34a; color:#fff; display:flex; align-items:center; justify-content:center; border-radius:6px; }
+  .t-rotate { transform: rotate(30deg); }
+  .t-scale { transform: scale(1.4); }
+  .t-translate { transform: translate(20px, 10px); }
+  .t-skew { transform: skew(15deg, 5deg); }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 32</h1><p>2D Transforms: rotate, scale, translate, skew</p></header>
+<main>
+  <div class="program-page">
+    <h1>2D Transform Functions</h1>
+    <p class="description">Demonstrates the four basic 2D transform functions applied to identical boxes.</p>
+    <div class="output-box t-grid">
+      <div class="t-box t-rotate">rotate</div>
+      <div class="t-box t-scale">scale</div>
+      <div class="t-box t-translate">translate</div>
+      <div class="t-box t-skew">skew</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

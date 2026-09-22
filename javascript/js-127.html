@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Strength Meter</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 127</h1><p>Password Strength Meter</p></header>
+<main>
+  <div class="program-page">
+    <h1>Password Strength Meter</h1>
+    <p class="description">Shows a live strength meter bar as the user types a password.</p>
+    <div class="output-box">
+<input id="pw127" type="password" placeholder="Password"><div style="height:8px; background:#e5e7eb; border-radius:4px; margin-top:6px; overflow:hidden;"><div id="meter127" style="height:100%; width:0%; background:#dc2626; transition:width 0.2s;"></div></div><div id="label127" style="font-size:0.85rem;"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+pw127.addEventListener("input", ()=>{
+  const p=pw127.value; let score=0;
+  if(p.length>=8) score++;
+  if(/[A-Z]/.test(p)) score++;
+  if(/\d/.test(p)) score++;
+  if(/[^A-Za-z0-9]/.test(p)) score++;
+  const pct=[0,25,50,75,100][score];
+  const colors=["#dc2626","#dc2626","#f59e0b","#f59e0b","#16a34a"];
+  meter127.style.width=pct+"%"; meter127.style.background=colors[score];
+  label127.textContent = ["Very Weak","Weak","Fair","Good","Strong"][score];
+});
+</script>
+</body>
+</html>

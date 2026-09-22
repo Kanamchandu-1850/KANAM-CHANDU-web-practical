@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mega Navigation Menu</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .mega { position:relative; display:inline-block; }
+  .mega > a { padding:10px 16px; background:#1e293b; color:#fff; text-decoration:none; border-radius:6px; }
+  .mega-panel { display:none; position:absolute; top:100%; left:0; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:20px; display:none; grid-template-columns:repeat(3,1fr); gap:20px; width:480px; box-shadow:0 10px 24px rgba(0,0,0,0.12); }
+  .mega:hover .mega-panel { display:grid; }
+  .mega-panel h4 { margin:0 0 8px; color:#111827; }
+  .mega-panel a { display:block; color:#6b7280; text-decoration:none; padding:2px 0; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 41</h1><p>Mega Navigation Menu</p></header>
+<main>
+  <div class="program-page">
+    <h1>Mega Menu</h1>
+    <p class="description">A large multi-column dropdown panel, common on SaaS marketing sites for grouping many links.</p>
+    <div class="output-box">
+      <div class="mega">
+        <a href="#">Solutions ▾</a>
+        <div class="mega-panel">
+          <div><h4>By Team</h4><a href="#">Sales</a><a href="#">Marketing</a></div>
+          <div><h4>By Industry</h4><a href="#">Finance</a><a href="#">Healthcare</a></div>
+          <div><h4>Resources</h4><a href="#">Docs</a><a href="#">Blog</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

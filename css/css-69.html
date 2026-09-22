@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirmation Dialog Component</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .confirm-toggle { display:none; }
+  .confirm-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:10; }
+  .confirm-toggle:checked ~ .confirm-overlay { display:flex; }
+  .confirm-box { background:#fff; padding:22px; border-radius:12px; width:280px; text-align:center; }
+  .confirm-box .actions { display:flex; gap:10px; justify-content:center; margin-top:16px; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 69</h1><p>Confirmation Dialog Component</p></header>
+<main>
+  <div class="program-page">
+    <h1>Confirmation Dialog</h1>
+    <p class="description">A focused dialog asking the user to confirm a destructive action, with Cancel and Confirm options.</p>
+    <div class="output-box">
+      <input type="checkbox" id="confirmToggle" class="confirm-toggle">
+      <label for="confirmToggle" class="btn" style="background:#dc2626;">Delete Item</label>
+      <div class="confirm-overlay">
+        <div class="confirm-box">
+          <h3>Delete this item?</h3>
+          <p>This action cannot be undone.</p>
+          <div class="actions">
+            <label for="confirmToggle" class="btn-secondary" style="padding:8px 16px; border-radius:8px; background:#e5e7eb; cursor:pointer;">Cancel</label>
+            <label for="confirmToggle" class="btn" style="background:#dc2626;">Delete</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

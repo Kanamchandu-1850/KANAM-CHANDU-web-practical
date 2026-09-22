@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Multiple Event Listeners to a Single Element</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 94</h1><p>Add Multiple Event Listeners to a Single Element</p></header>
+<main>
+  <div class="program-page">
+    <h1>Add Multiple Event Listeners to a Single Element</h1>
+    <p class="description">Attaches two separate listeners to the same button.</p>
+    <div class="output-box">
+<button class="btn" id="btn94">Click Me</button><div id="out94" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+const b94=document.getElementById("btn94");
+b94.addEventListener("click", ()=>{ out94.textContent = "Listener 1 fired"; });
+b94.addEventListener("click", ()=>{ out94.textContent += "\nListener 2 fired"; });
+</script>
+</body>
+</html>

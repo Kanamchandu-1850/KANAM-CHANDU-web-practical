@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Transforms and Perspective</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .scene { perspective: 500px; padding: 30px; }
+  .cube-face {
+    width:120px; height:120px; background:#7c3aed; color:#fff;
+    display:flex; align-items:center; justify-content:center; border-radius:8px;
+    transition: transform 0.6s;
+    transform: rotateY(35deg) rotateX(10deg);
+  }
+  .cube-face:hover { transform: rotateY(0deg) rotateX(0deg); }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 33</h1><p>3D Transforms and Perspective Effects</p></header>
+<main>
+  <div class="program-page">
+    <h1>3D Transforms</h1>
+    <p class="description">The parent has a "perspective" so child 3D rotations look realistic. Hover the box to flatten it back.</p>
+    <div class="output-box scene">
+      <div class="cube-face">3D Box</div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

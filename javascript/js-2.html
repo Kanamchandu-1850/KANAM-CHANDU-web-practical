@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arithmetic Operations</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 2</h1><p>Arithmetic Operations</p></header>
+<main>
+  <div class="program-page">
+    <h1>Arithmetic Operations</h1>
+    <p class="description">Performs +, -, *, /, % on two numbers.</p>
+    <div class="output-box">
+<input id="a2" type="number" value="12"><input id="b2" type="number" value="5"><button class="btn" onclick="run2()">Calculate</button><div id="out2" class="output-line"></div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function run2(){
+  const a = Number(document.getElementById("a2").value);
+  const b = Number(document.getElementById("b2").value);
+  document.getElementById("out2").textContent =
+    `Sum: ${a+b}\nDifference: ${a-b}\nProduct: ${a*b}\nQuotient: ${(a/b).toFixed(2)}\nRemainder: ${a%b}`;
+}
+</script>
+</body>
+</html>

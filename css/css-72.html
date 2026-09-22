@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accordion Component</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .accordion { max-width:400px; }
+  .acc-item input { display:none; }
+  .acc-item label { display:block; padding:12px 14px; background:#f3f4f6; cursor:pointer; border-radius:6px; margin-bottom:4px; font-weight:600; }
+  .acc-body { max-height:0; overflow:hidden; transition:max-height 0.3s ease; background:#fff; border:1px solid #e5e7eb; border-radius:0 0 6px 6px; }
+  .acc-item input:checked ~ .acc-body { max-height:120px; padding:10px 14px; }
+</style>
+</head>
+<body>
+<header class="site-header"><h1>CSS Program 72</h1><p>Accordion Component</p></header>
+<main>
+  <div class="program-page">
+    <h1>Accordion (CSS-only)</h1>
+    <p class="description">Click each question to expand/collapse its answer, using checkboxes and max-height transitions — no JS.</p>
+    <div class="output-box accordion">
+      <div class="acc-item">
+        <input type="checkbox" id="a1"><label for="a1">What is Cloudify?</label>
+        <div class="acc-body">Cloudify is a workflow automation platform for teams.</div>
+      </div>
+      <div class="acc-item">
+        <input type="checkbox" id="a2"><label for="a2">Is there a free trial?</label>
+        <div class="acc-body">Yes, a 14-day free trial with no credit card required.</div>
+      </div>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to CSS Programs</a></div>
+  </div>
+</main>
+</body>
+</html>

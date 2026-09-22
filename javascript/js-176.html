@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart That Persists After Page Refresh</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .output-line { background:#f3f4f6; border-radius:6px; padding:10px 14px; margin-top:10px; font-family:monospace; white-space:pre-wrap; }
+  
+</style>
+</head>
+<body>
+<header class="site-header"><h1>JavaScript Program 176</h1><p>Shopping Cart That Persists After Page Refresh</p></header>
+<main>
+  <div class="program-page">
+    <h1>Shopping Cart That Persists After Page Refresh</h1>
+    <p class="description">A cart list saved to localStorage so it survives a refresh.</p>
+    <div class="output-box">
+<input id="ci176" placeholder="Item"><button class="btn" onclick="add176()">Add</button><ul id="cart176"></ul>
+    </div>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="index.html">Back to JavaScript Programs</a></div>
+  </div>
+</main>
+<script>
+function getCart176(){ return JSON.parse(localStorage.getItem("cart176")||"[]"); }
+function render176(){ cart176.innerHTML = getCart176().map(i=>`<li>${i}</li>`).join(""); }
+function add176(){ if(!ci176.value) return; const a=getCart176(); a.push(ci176.value); localStorage.setItem("cart176", JSON.stringify(a)); ci176.value=""; render176(); }
+render176();
+</script>
+</body>
+</html>
